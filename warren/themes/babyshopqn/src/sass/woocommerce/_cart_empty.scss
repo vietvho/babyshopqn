@@ -1,0 +1,18 @@
+.woocommerce {
+    .page-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 16px;
+        // margin-top: 32px;
+        @media (max-width: 767px) {
+            font-size: 28px;
+        }
+    }
+    .woocommerce>h2 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+}

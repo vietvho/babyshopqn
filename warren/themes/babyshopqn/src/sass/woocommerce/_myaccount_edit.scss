@@ -1,0 +1,373 @@
+.woocommerce-MyAccount-navigation{
+    font-size: 14px;
+    a {
+        line-height: 20px;
+        padding: 10px 0;
+        display: block;
+        &:not(:hover){
+            color: inherit;
+        }
+    }
+    li.is-active {
+        font-weight: bold;
+    }
+}
+.woocommerce-account {
+    .woocommerce-MyAccount-content {
+        border: 1px solid #ECECEC;
+        border-radius: 8px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #222428;
+       
+    }
+    .endpoint-title {
+        font-size: 20px;
+        line-height: 1.1;
+        padding: 16px 24px;
+        font-weight: 600;
+        border-bottom: 1px solid #ECECEC;
+    }
+    .myaccount-wrapper {
+        padding: 0 24px;
+        &.orders {
+            padding: 0;
+        }
+    }
+}
+
+.woocommerce-account div.woocommerce {
+    padding-top: 30px;
+}
+
+.woocommerce table.shop_table {
+    font-size: inherit;
+    th,td {
+        padding: 16px 24px;
+    }
+    th {
+        color: #888;
+        font-weight: 600;
+    }
+
+}
+
+.woocommerce {
+    .woocommerce-MyAccount-content {
+        table.shop_table {
+            border: 0;
+        }
+        &.orders {
+            position: relative;
+            margin-bottom: 136px;
+            .woocommerce-pagination {
+                position: absolute;
+                right: 0;
+                top: 100%;
+                margin-top: 24px;
+                ul {
+                    border: none;
+                    li {
+                        border:none;
+                        a {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
+    background-color: #000;
+    color: #fff;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+    padding: 7px;
+}
+.edit-account--toggle li{
+    transition: all 0.3s;
+}
+.edit-account--item{
+    opacity: 1;
+    ~ .panel {
+        overflow: hidden;
+        transition: all 0.3s;
+        display: none;
+    }
+    &.active {
+        display: none;
+        ~ .panel {
+            display: block;
+        }
+    }
+} 
+
+// account informations
+.woocommerce-account {
+    .woocommerce {
+        margin-bottom: 30px;
+    }
+}
+.woocommerce-MyAccount-navigation {
+    ul {
+        @include media-breakpoint-down(md) {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-shadow: -2px 2px 10px -2px #cccccca6;
+            -moz-box-shadow: -2px 2px 10px -2px #cccccca6;
+            box-shadow: -2px 2px 10px -2px #cccccca6;
+        }
+        li {            
+            @include media-breakpoint-down(md){
+                display: none;
+                border-top: 1px solid #cccccc40;
+                order: 1;
+                &.is-active {
+                    order: 0;
+                    background-color: #000;
+                    text-align: center;
+                    display: block;                    
+                    position: relative;
+                    color: #fff;                    
+                    font-weight: 400;
+                }
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &.expand {
+        ul {
+            li {
+                @include media-breakpoint-down(md){
+                    display: block;
+                    text-align: center;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.woocommerce-MyAccount-content {
+    .myaccount-wrapper {
+        .woocommerce-EditAccountForm {
+            ul {
+                &.edit-account--toggle {
+                    li {
+                        padding: 15px 0;
+                        border-top: 1px solid #ececec;
+                        &:first-child {
+                            border-top: none;
+                        }
+                        .edit-account--item {
+                            display: flex;
+                            font-size: 14px;
+                            line-height: 20px;
+                            @include media-breakpoint-down(sm){
+                                font-size: 12px;
+                            }
+                            &.active {
+                                display: none;
+                            }
+                            label {
+                                width: 25%;
+                                font-weight: 600;                                
+                            }
+                            .field-content {
+                                width: 50%;
+                            }
+                            a {
+                                width: 25%;
+                                text-align: right;
+                                font-weight: 600;
+                                color: $color_primary;
+                            }
+                        }
+                        .panel {
+                            padding-bottom: 5px;
+                            &:first-child {
+                                padding-bottom: 15px;
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+        &.edit-address {
+            padding: 24px;
+            form {
+                > h3 {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #222428;
+                    margin-bottom: 16px;
+                }
+            }
+            .form-row {
+                &.form-row-first,
+                &.form-row-last {
+                    width: 100%;
+                }
+            }
+        }
+        .btn {
+            &.edit {
+                color: #222428;
+                border: 2px solid #222428;
+                background: transparent;
+            }
+        }
+        .button {
+            border-color: transparent;
+            line-height: inherit;
+            margin-top: 10px;
+        }
+        &.orders {
+            .woocommerce-orders-table {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .form-row {
+        border: 1px solid #888888;
+        border-radius: 8px;
+        margin-bottom: 16px !important;
+        &.form-row-first,
+        &.form-row-last {
+            width: 49%;
+        }
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+        label {
+            font-size: 12px;
+            line-height: 16px;
+            padding-left: 10px;
+            padding-top: 5px;
+            color: #888888;
+        }
+        input {
+            border: none;
+            height: 25px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .password-input {
+            input {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .selection {
+            .select2-selection {
+                border: none;
+            }
+        }
+        .select2-container {
+            margin-bottom: 7px;
+        }
+    }
+
+    // edit address
+    &.edit-address {
+        .woocommerce-Address {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ececec;
+            &:last-child {
+                border-bottom: none;
+            }
+            &-name {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #222428;
+                text-transform: uppercase;
+                .edit {
+                    float: right;
+                    text-transform: initial;
+                }
+            }
+            p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                margin-top: 8px;
+                label {
+                    font-weight: 400;
+                }
+            }
+            .address-title {
+                color: #004B23;
+            }
+        }
+    }
+
+    // 
+}
+
+// order details 
+.woocommerce-order-details {
+    .woocommerce-order-details__title {
+        display: none;
+    }
+    .woocommerce-table {
+        &__line-item {
+            td {
+                vertical-align: top !important;
+                padding: 24px !important;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 12px;
+                color: #222428;
+            }
+        }
+        &__product-name {
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+            }
+            a {
+                margin-left: 12px;
+                vertical-align: top;
+                color: #222428;
+            }
+        }
+        tfoot {
+            td {
+                div {
+                    display: flex;
+                    text-align: right;
+                    margin-bottom: 8px;
+                    label {
+                        width: 50%;
+                        color: #888888;
+                    }
+                    span {
+                        width: 50%;
+                        color: #222428;
+                        .woocommerce-Price-amount.amount,
+                        .woocommerce-Price-currencySymbol {
+                            color: $color_primary;
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wishlist-title-container {
+    display: none;
+}
+

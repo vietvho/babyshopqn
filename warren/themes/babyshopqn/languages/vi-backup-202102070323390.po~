@@ -1,0 +1,577 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Beautizon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-03 07:34+0000\n"
+"PO-Revision-Date: 2021-02-07 03:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: Tiếng Việt\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.6\n"
+"X-Domain: bbs"
+
+#: lib/setup.php:463
+msgid " hoặc truy cập"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:58
+msgid " sản phẩm khác"
+msgstr ""
+
+#: lib/setup.php:464
+msgid " Tài khoản"
+msgstr ""
+
+#: lib/setup.php:465
+msgid " để quản lý tài khoản và đơn hàng của bạn."
+msgstr ""
+
+#: woocommerce/cart/cart.php:23
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/rating.php:41
+#, php-format
+msgid "%s reviews"
+msgid_plural "%s reviews"
+msgstr[0] "Đánh giá"
+msgstr[1] ""
+
+#: lib/woocommerce/setup.php:25
+msgid "-> About the Brands"
+msgstr ""
+
+#: lib/woocommerce/setup.php:15
+msgid "-> How to use"
+msgstr ""
+
+#: lib/woocommerce/setup.php:20
+msgid "-> Ingredients"
+msgstr ""
+
+#: lib/woocommerce/setup.php:30
+msgid "-> Shipping & Returns"
+msgstr ""
+
+#: lib/woocommerce/setup.php:10
+msgid ""
+"<p>Say hello to our Purely Ageless Rejuvenating Day Cream! It will be your "
+"best friend if you are wanting to fight premature ageing, as well as fine "
+"lines! This is all due to our new natural, firming miracle ingredient- pure "
+"ribose! The super sugar, obtained from corn seed works to visibly reduce the "
+"appearance of wrinkles (total area) by up to 78%, making the skin more "
+"elastic after just 14 days. It is also infused with White Hibiscus and "
+"Baobab to naturally plump, firm and hydrate skin, while Cocoa Butter, Goji "
+"Berry and Vitamin E soften and soothe dry skin, leaving skin smoother and "
+"rejuvenated!</p><p>TIP: Before applying our Rejuvenating Day Cream, massage "
+"our Intensive Firming Serum or Hydration Elixir into the skin!</p>"
+msgstr ""
+
+#: lib/woocommerce/setup.php:87
+msgid "Account Information"
+msgstr "Thông tin tài khoản"
+
+#: lib/woocommerce/login_register_form.php:15
+msgid "Account Settings"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:81
+msgid "Add Address"
+msgstr "Thêm địa chỉ"
+
+#: woocommerce/myaccount/my-address.php:66
+msgid "Address"
+msgstr "Địa chỉ"
+
+#: woocommerce/order/order-details.php:126
+msgid "Back to Orders"
+msgstr "Xem lại đơn hàng"
+
+#: woocommerce/cart/mini-cart.php:25
+msgid "Basket"
+msgstr "Giỏ hàng"
+
+#. Name of the theme
+msgid "Beautizon"
+msgstr ""
+
+#. Author of the theme
+msgid "Beautizon Team"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:123
+msgid ""
+"Beautizon uses Google ReCaptcha and by registering, users are subject to "
+msgstr ""
+
+#: lib/woocommerce/login_register_form.php:73
+msgid "birthdate"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:95
+msgid "Birthday"
+msgstr "Ngày sinh"
+
+#: woocommerce/single-product/add-to-cart/simple.php:55
+msgid "Buy Now"
+msgstr "Mua ngay"
+
+#: footer.php:209
+#, php-format
+msgid ""
+"By clicking \"Join Now\" you acknowledge that you are agree to Beautizon’s "
+"%1$s, %2$s, and to automatically receive Beautizon offers and notifications "
+"via email."
+msgstr ""
+
+#: woocommerce/wishlist-view.php:86 woocommerce/wishlist-view.php:158
+msgid "Bạn chưa có sản phẩm nào trong danh sách yêu thích"
+msgstr ""
+
+#: 404.php:16
+msgid "Bạn có thể vào liên kết gợi ý dưới đây:"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:117
+msgid ""
+"Bằng cách nhấp vào “Tham gia ngay bây giờ”, bạn xác nhận rằng bạn đồng ý với "
+"Beautizon’s"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:89
+#: woocommerce/myaccount/form-edit-address.php:46
+msgid "Cancel"
+msgstr "Hủy"
+
+#: single-goc-lam-dep.php:46
+msgid "Chia sẻ"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:118
+msgid "Chính sách bảo mật"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:120
+msgid "Chính sách mua hàng"
+msgstr ""
+
+#: 404.php:14
+msgid "Chúng tôi có thể dường như tìm thấy trang mà bạn đang tìm kiếm."
+msgstr ""
+
+#: single-goc-lam-dep.php:82
+msgid "Chưa có bài viết hay sản phẩm nào ở đây"
+msgstr ""
+
+#: lib/post_type/product.php:19
+msgid "Chỉnh sửa Dòng sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:44
+msgid "Chỉnh sửa Thương hiệu sản phẩm"
+msgstr ""
+
+#: regions/carousel-slider-product.php:182
+msgid "Click View"
+msgstr "Xem nhanh"
+
+#: woocommerce/myaccount/dashboard.php:97
+msgid "Contact us to change"
+msgstr "Liên hệ đổi ngày sinh"
+
+#: lib/setup.php:460
+msgid "Cảm ơn bạn đã mua sắm cùng Beautizon."
+msgstr ""
+
+#: lib/post_type/product.php:20
+msgid "Cập nhật Dòng sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:45
+msgid "Cập nhật Thương hiệu sản phẩm"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:24
+msgid "Date: "
+msgstr ""
+
+#: lib/post_type/product.php:13 lib/post_type/product.php:14
+#: lib/post_type/product.php:23
+msgid "Dòng sản phẩm"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:30
+#: woocommerce/myaccount/dashboard.php:51
+#: woocommerce/myaccount/dashboard.php:68
+msgid "Edit"
+msgstr "sửa"
+
+#: woocommerce/myaccount/dashboard.php:49
+#: woocommerce/myaccount/dashboard.php:54
+msgid "Email"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:38
+msgid "Frequently bought together"
+msgstr "Thường mua cùng"
+
+#: taxonomy-product_cat.php:267 woocommerce/archive-product.php:264
+msgid "Giá cao đến thấp"
+msgstr ""
+
+#: taxonomy-product_cat.php:268 woocommerce/archive-product.php:265
+msgid "Giá thấp đến cao"
+msgstr ""
+
+#: footer.php:206
+msgid "Hi, Natural Beauty ;)"
+msgstr ""
+
+#: taxonomy-product_cat.php:265 woocommerce/archive-product.php:262
+msgid "Hàng mới nhất"
+msgstr ""
+
+#: lib/woocommerce/setup.php:13
+msgid "Hướng dẫn sử dụng"
+msgstr ""
+
+#: 404.php:12
+msgid "Không tìm thấy trang!"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:93 woocommerce/cart/cart-empty.php:30
+msgid "Log in"
+msgstr "Đăng nhập"
+
+#: lib/woocommerce/login_register_form.php:16
+msgid "Log out"
+msgstr "Đăng xuất"
+
+#: woocommerce/content-popup-product.php:79
+#: woocommerce/content-single-product.php:97
+msgid "loves"
+msgstr "lượt yêu thích"
+
+#: taxonomy-product_cat.php:170 taxonomy-product_cat.php:176
+#: woocommerce/archive-product.php:167 woocommerce/archive-product.php:173
+msgid "Lọc sản phẩm"
+msgstr ""
+
+#: lib/woocommerce/login_register_form.php:14
+msgid "My Wishlist"
+msgstr "Yêu thích"
+
+#: lib/setup.php:408 lib/woocommerce/setup.php:114
+msgid "My wishlist"
+msgstr "Yêu thích"
+
+#: woocommerce/myaccount/dashboard.php:28
+#: woocommerce/myaccount/dashboard.php:33
+msgid "Name"
+msgstr "Tên"
+
+#: lib/post_type/product.php:22
+msgid "New Dòng sản phẩm tên mới"
+msgstr ""
+
+#: lib/post_type/product.php:47
+msgid "New Thương hiệu sản phẩm Name"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:106
+msgid "No products in the cart."
+msgstr "Không có sản phẩm nào trong giỏ"
+
+#: single-goc-lam-dep.php:83
+msgid "Nội dung bạn đang tìm kiếm không được tìm thấy."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:24
+msgid "Order ID: #"
+msgstr ""
+
+#: lib/post_type/product.php:17
+msgid "Parent Dòng sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:18
+msgid "Parent Dòng sản phẩm:"
+msgstr ""
+
+#: lib/post_type/product.php:42
+msgid "Parent Thương hiệu sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:43
+msgid "Parent Thương hiệu sản phẩm:"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:66
+#: woocommerce/myaccount/dashboard.php:71
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: woocommerce/myaccount/my-address.php:74
+msgid "Phone"
+msgstr "Số điện thoại"
+
+#: woocommerce/cart/cart-empty.php:28
+msgid ""
+"Please login in if you are trying to retrieve a basket created in the past."
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:124
+msgid "Privacy Policy"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:32
+msgid "Product"
+msgstr "Sản phẩm"
+
+#: lib/feature/feature_change_categories_metabox.php:10
+msgid "Quản lý danh mục sản phẩm"
+msgstr ""
+
+#: woocommerce/content-single-product.php:141
+msgid "Ratings & Reviews"
+msgstr "Đánh giá & bình luận"
+
+#: lib/woocommerce/login_register_form.php:13
+msgid "Recent Orders"
+msgstr ""
+
+#: woocommerce/cart/cart.php:152
+msgid "Recommended for You"
+msgstr "Đề xuất cho bạn"
+
+#: woocommerce/single-product/review.php:79
+msgid "Recommends this product"
+msgstr "Đề xuất sản phẩm này"
+
+#: woocommerce/cart/cart.php:106
+msgid "Remove"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:57
+msgid "Review your order"
+msgstr ""
+
+#: page.php:19
+msgid "Rất tiếc, trang này chưa có nội dung"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: woocommerce/content-popup-product.php:104
+msgid "See product details"
+msgstr "xem chi tiết"
+
+#: footer.php:314
+msgid "Shop"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:37
+msgid "Sign in for a more personalized experience"
+msgstr "Đăng nhập để cùng mua sắm vui hơn nhé!"
+
+#: single.php:27
+msgid "Sorry, no posts were found."
+msgstr "Thật tiếc, bài viết không tìm thấy. "
+
+#: woocommerce/myaccount/view-order.php:24
+msgid "Status: "
+msgstr ""
+
+#: footer.php:207
+msgid "Subscribe to receive gift from us on every order."
+msgstr ""
+
+#: taxonomy-product_cat.php:264 woocommerce/archive-product.php:261
+msgid "Sản phẩm nổi bật"
+msgstr ""
+
+#: taxonomy-product_cat.php:170 woocommerce/archive-product.php:167
+msgid "Sắp xếp"
+msgstr ""
+
+#: lib/woocommerce/login_register_form.php:65
+msgid "Số điện thoại"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:124
+msgid "Terms of Service"
+msgstr ""
+
+#: footer.php:54
+msgid "Theo dõi chúng tôi trên"
+msgstr ""
+
+#: footer.php:22
+msgid "THÔNG TIN DOANH NGHIỆP"
+msgstr ""
+
+#: lib/woocommerce/setup.php:18
+msgid "Thành phần"
+msgstr ""
+
+#: lib/post_type/product.php:21
+msgid "Thêm mới Dòng sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:46
+msgid "Thêm mới Thương hiệu sản phẩm"
+msgstr ""
+
+#: lib/woocommerce/setup.php:8
+msgid "Thông tin sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:38 lib/post_type/product.php:39
+#: lib/post_type/product.php:48
+msgid "Thương hiệu sản phẩm"
+msgstr ""
+
+#: 404.php:19
+msgid "Trang chủ"
+msgstr ""
+
+#: taxonomy-product_cat.php:266 woocommerce/archive-product.php:263
+msgid "Trung bình nhận xét"
+msgstr ""
+
+#: lib/post_type/product.php:15
+msgid "Tìm kiếm Dòng sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:40
+msgid "Tìm kiếm Thương hiệu sản phẩm"
+msgstr ""
+
+#: lib/setup.php:524
+msgid "Tải thêm"
+msgstr ""
+
+#: lib/post_type/product.php:16
+msgid "Tất cả Dòng sản phẩm"
+msgstr ""
+
+#: lib/post_type/product.php:41
+msgid "Tất cả Thương hiệu sản phẩm"
+msgstr ""
+
+#: 404.php:15
+msgid ""
+"URL có thể bị sai chính tả hoặc trang bạn đang tìm kiếm không còn khả dụng."
+msgstr ""
+
+#: lib/setup.php:410 lib/feature/feature_change_categories_metabox.php:142
+msgid "View All"
+msgstr "Xem tất cả"
+
+#: woocommerce/cart/mini-cart.php:25
+msgid "View all"
+msgstr "Xem tất cả"
+
+#: lib/setup.php:461
+msgid "Vui lòng kiểm tra email của bạn để biết thông tin chi tiết về đơn hàng"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:58
+msgid "và "
+msgstr ""
+
+#: lib/woocommerce/setup.php:28
+msgid "Vận chuyển & Trả hàng"
+msgstr ""
+
+#: 404.php:20
+msgid "Về Beautizon"
+msgstr ""
+
+#: lib/woocommerce/setup.php:23
+msgid "Về Thương hiệu"
+msgstr ""
+
+#: woocommerce/single-product/review.php:98
+msgid "Was This Review Helpful?"
+msgstr "Nhận xét này có hữu ích không?"
+
+#: lib/woocommerce/login_register_form.php:23
+msgid "Welcome, "
+msgstr "Chào bạn, "
+
+#: woocommerce/single-product/rating-custom.php:77
+msgid "would recommend"
+msgstr "Muốn giới thiệu"
+
+#: woocommerce/content-single-product.php:144
+msgid "Write a review"
+msgstr "Viết đánh giá"
+
+#: regions/carousel-slider-product.php:188
+msgid "Xem thêm"
+msgstr ""
+
+#: parts/megamenu_container.php:36
+msgid "Xem tất cả"
+msgstr ""
+
+#. Description of the theme
+msgid "Xenia Build it"
+msgstr ""
+
+#: lib/helper.php:37
+msgid "Xin lỗi, nonce của bạn chưa được xác minh"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:26
+msgid "You may also like"
+msgstr "Bạn cũng có thể thích"
+
+#: woocommerce/cart/cart-empty.php:26
+msgid "Your basket is currently empty."
+msgstr "Giỏ hàng trống"
+
+#: footer.php:272
+msgid "Yêu thích"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:119
+msgid "Điều khoản chung"
+msgstr ""
+
+#: footer.php:48
+msgid "ĐĂNG KÝ NHẬN TIN"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:90 woocommerce/wishlist-view.php:150
+#: woocommerce/myaccount/form-login.php:77
+#: woocommerce/myaccount/form-login.php:78
+msgid "Đăng kí thành viên để đặt hàng nhanh và nhận được nhiều ưu đãi hơn!"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:154
+msgid "Đăng ký"
+msgstr ""
+
+#: parts/header.php:43 woocommerce/wishlist-view.php:153
+msgid "Đăng nhập"
+msgstr ""
+
+#: footer.php:50
+msgid "Để nhận những thông tin khuyến mãi đầy hấp dẫn từ chúng tôi:"
+msgstr ""
+
+#: parts/content-blogblock.php:23
+msgid "Đọc thêm"
+msgstr ""

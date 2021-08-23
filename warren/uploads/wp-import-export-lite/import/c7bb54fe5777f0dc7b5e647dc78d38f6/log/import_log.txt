@@ -1,0 +1,160 @@
+[11:56:09] <strong>Record</strong> #1
+[11:56:10] post #26 Successfully Imported
+[11:56:10] <strong>Record</strong> #2
+[11:56:10] post #27 Successfully Imported
+[11:56:10] <strong>Record</strong> #3
+[11:56:11] post #28 Successfully Imported
+[11:56:11] <strong>Record</strong> #4
+[11:56:11] post #29 Successfully Imported
+[11:56:11] <strong>Record</strong> #5
+[11:56:11] post #30 Successfully Imported
+[11:56:11] <strong>Record</strong> #6
+[11:56:11] post #31 Successfully Imported
+[11:56:11] <strong>Record</strong> #7
+[11:56:12] post #32 Successfully Imported
+[11:56:12] <strong>Record</strong> #8
+[11:56:12] post #33 Successfully Imported
+[11:56:12] <strong>Record</strong> #9
+[11:56:12] post #34 Successfully Imported
+[11:56:12] <strong>Record</strong> #10
+[11:56:12] post #35 Successfully Imported
+[11:56:12] <strong>Record</strong> #11
+[11:56:13] post #36 Successfully Imported
+[11:56:13] <strong>Record</strong> #12
+[11:56:13] post #37 Successfully Imported
+[11:56:13] <strong>Record</strong> #13
+[11:56:13] post #38 Successfully Imported
+[11:56:13] <strong>Record</strong> #14
+[11:56:14] post #39 Successfully Imported
+[11:56:14] <strong>Record</strong> #15
+[11:56:14] post #40 Successfully Imported
+[11:56:14] <strong>Record</strong> #16
+[11:56:14] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:14] post #41 Successfully Imported
+[11:56:14] <strong>Record</strong> #17
+[11:56:15] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:15] post #42 Successfully Imported
+[11:56:15] <strong>Record</strong> #18
+[11:56:15] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:15] post #43 Successfully Imported
+[11:56:15] <strong>Record</strong> #19
+[11:56:15] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:15] post #44 Successfully Imported
+[11:56:15] <strong>Record</strong> #20
+[11:56:16] post #45 Successfully Imported
+[11:56:19] <strong>Record</strong> #21
+[11:56:19] post #46 Successfully Imported
+[11:56:19] <strong>Record</strong> #22
+[11:56:20] post #47 Successfully Imported
+[11:56:20] <strong>Record</strong> #23
+[11:56:20] post #48 Successfully Imported
+[11:56:20] <strong>Record</strong> #24
+[11:56:20] post #49 Successfully Imported
+[11:56:20] <strong>Record</strong> #25
+[11:56:21] post #50 Successfully Imported
+[11:56:21] <strong>Record</strong> #26
+[11:56:21] post #51 Successfully Imported
+[11:56:21] <strong>Record</strong> #27
+[11:56:22] post #52 Successfully Imported
+[11:56:22] <strong>Record</strong> #28
+[11:56:22] post #53 Successfully Imported
+[11:56:22] <strong>Record</strong> #29
+[11:56:22] post #54 Successfully Imported
+[11:56:22] <strong>Record</strong> #30
+[11:56:23] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:23] post #55 Successfully Imported
+[11:56:23] <strong>Record</strong> #31
+[11:56:23] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:23] post #56 Successfully Imported
+[11:56:23] <strong>Record</strong> #32
+[11:56:23] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:23] post #57 Successfully Imported
+[11:56:23] <strong>Record</strong> #33
+[11:56:24] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:24] post #58 Successfully Imported
+[11:56:24] <strong>Record</strong> #34
+[11:56:24] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:24] post #59 Successfully Imported
+[11:56:24] <strong>Record</strong> #35
+[11:56:24] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:24] post #60 Successfully Imported
+[11:56:24] <strong>Record</strong> #36
+[11:56:25] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:25] post #61 Successfully Imported
+[11:56:25] <strong>Record</strong> #37
+[11:56:25] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:25] post #62 Successfully Imported
+[11:56:25] <strong>Record</strong> #38
+[11:56:25] post #63 Successfully Imported
+[11:56:25] <strong>Record</strong> #39
+[11:56:26] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:26] post #64 Successfully Imported
+[11:56:26] <strong>Record</strong> #40
+[11:56:26] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:26] post #65 Successfully Imported
+[11:56:30] <strong>Record</strong> #41
+[11:56:31] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:31] post #66 Successfully Imported
+[11:56:31] <strong>Record</strong> #42
+[11:56:31] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:31] post #67 Successfully Imported
+[11:56:31] <strong>Record</strong> #43
+[11:56:32] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:32] post #68 Successfully Imported
+[11:56:32] <strong>Record</strong> #44
+[11:56:32] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:32] post #69 Successfully Imported
+[11:56:32] <strong>Record</strong> #45
+[11:56:33] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:33] post #70 Successfully Imported
+[11:56:33] <strong>Record</strong> #46
+[11:56:33] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:33] post #71 Successfully Imported
+[11:56:33] <strong>Record</strong> #47
+[11:56:33] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:34] post #72 Successfully Imported
+[11:56:34] <strong>Record</strong> #48
+[11:56:34] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:34] post #73 Successfully Imported
+[11:56:34] <strong>Record</strong> #49
+[11:56:34] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:34] post #74 Successfully Imported
+[11:56:34] <strong>Record</strong> #50
+[11:56:35] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:35] post #75 Successfully Imported
+[11:56:35] <strong>Record</strong> #51
+[11:56:35] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:35] post #76 Successfully Imported
+[11:56:35] <strong>Record</strong> #52
+[11:56:36] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:36] post #77 Successfully Imported
+[11:56:36] <strong>Record</strong> #53
+[11:56:36] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:36] post #78 Successfully Imported
+[11:56:36] <strong>Record</strong> #54
+[11:56:36] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:36] post #79 Successfully Imported
+[11:56:36] <strong>Record</strong> #55
+[11:56:37] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:37] post #80 Successfully Imported
+[11:56:37] <strong>Record</strong> #56
+[11:56:37] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:37] post #81 Successfully Imported
+[11:56:37] <strong>Record</strong> #57
+[11:56:37] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:37] post #82 Successfully Imported
+[11:56:37] <strong>Record</strong> #58
+[11:56:38] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:38] post #83 Successfully Imported
+[11:56:38] <strong>Record</strong> #59
+[11:56:38] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:38] post #84 Successfully Imported
+[11:56:38] <strong>Record</strong> #60
+[11:56:38] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:38] post #85 Successfully Imported
+[11:56:42] <strong>Record</strong> #61
+[11:56:42] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:42] post #86 Successfully Imported
+[11:56:42] <strong>Record</strong> #62
+[11:56:43] <strong>ERROR</strong> : A term with the name provided already exists with this parent.
+[11:56:43] post #87 Successfully Imported

@@ -1,0 +1,35 @@
+.woocommerce-MyAccount-content {
+    &.edit-address {
+        .woocommerce-Address {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ececec;
+            &:last-child {
+                border-bottom: none;
+            }
+            &-name {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #222428;
+                text-transform: uppercase;
+                .edit {
+                    float: right;
+                    text-transform: initial;
+                }
+            }
+            p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                margin-top: 8px;
+                label {
+                    font-weight: 400;
+                }
+            }
+            .address-title {
+                color: #004B23;
+            }
+        }
+    }
+}

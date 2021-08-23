@@ -1,0 +1,68 @@
+.page404area {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	&.main {
+		min-height: 28vh;
+		padding: 30px 0;
+		.txt-notfound {
+			font-size: 40px;
+			font-weight: bold;
+			@media (max-width: 767px) {
+				font-size: 20px;
+			}
+		}
+	}
+	&__logo {
+		margin-bottom: 32px;
+		img {
+		    height: 240px;
+		}
+	}
+	&__title {
+		font-size: 48px;
+		font-weight: bold;
+		margin-bottom: 32px;
+	}
+	&__description {
+		margin: 0 auto;
+		max-width: 900px;
+		font-size: 24px;
+		margin-bottom: 32px;
+		line-height: 1.4;
+		p {
+			margin-bottom: 18px;
+		}
+    
+	}
+	._btndefault {
+		background: $color_primary;
+		color: $white;
+		border-radius: 24px;
+		padding: 15px 30px;
+		font-size: 20px;
+		margin: 10px;
+		display: inline-block;
+		&:hover {
+			background: $color_secondary;
+		}
+	}
+	@media (max-width: 767px) {
+		padding-top: 24px;
+		padding-bottom: 24px;
+
+		&__logo {
+			margin-bottom: 24px;
+			img {
+				height: 180px;
+			}
+		}
+		&__title {
+            font-size: 32px;
+		}
+		&__description {
+            font-size: 18px;
+
+		}
+	}
+}

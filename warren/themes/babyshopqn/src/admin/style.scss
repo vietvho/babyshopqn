@@ -1,0 +1,26 @@
+.wp-list-table {
+	
+    overflow: auto;
+    position: relative;
+    display: block;
+
+    thead {
+    	th {
+    		white-space: nowrap;
+
+    		
+    	}
+		#product_tag,
+    	#product_cat {
+			min-width: 200px;
+		}
+    	#date,
+    	#name {
+			min-width: 200px;
+		}
+		#thumb {
+			min-width: 8px;
+		}
+    }
+
+}
