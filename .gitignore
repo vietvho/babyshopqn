@@ -1,4 +1,3 @@
-*.log
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
@@ -10,6 +9,28 @@ wp-content/uploads/
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# Assets #
+######################
+assets
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+*.psd
+/node_modules
 
 /.htaccess
 /license.txt
