@@ -31,4 +31,5 @@ jobs:
     # - run: cd babyshopqn/warren/themes/babyshopqn
     - run: cd ~/babyshopqn/babyshopqn
     - run: npm install yarn
+    - run: yarn install
     - run: yarn build   
