@@ -30,7 +30,8 @@ assets
 *.tar
 *.zip
 *.psd
-warren/node_modules
+warren/themes/babyshopqn/node_modules
+warren/uploads
 
 /.htaccess
 /license.txt
