@@ -239,7 +239,7 @@ function setup_script(){
     wp_dequeue_script( 'fancybox' );
   }
   wp_enqueue_style('font-inter','https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-  wp_enqueue_style('bbs-style',THEME_CHILD_URI.'/assets/css/style.css',[],filemtime(THEME_CHILD_DIR.'/assets/css/style.css'));
+  wp_enqueue_style('bbs-style',THEME_CHILD_URI.'/assets/css/main.css',[],filemtime(THEME_CHILD_DIR.'/assets/css/main.css'));
   wp_enqueue_script('bbs-js',THEME_CHILD_URI.'/assets/js/main.js',['jquery'],filemtime(THEME_CHILD_DIR.'/assets/js/main.js'),true);
 }
 add_filter( 'woocommerce_enqueue_styles', 'woocommerce_dequeue_styles' );
