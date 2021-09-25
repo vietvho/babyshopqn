@@ -30,7 +30,7 @@ assets
 *.tar
 *.zip
 *.psd
-/node_modules
+warren/node_modules
 
 /.htaccess
 /license.txt
