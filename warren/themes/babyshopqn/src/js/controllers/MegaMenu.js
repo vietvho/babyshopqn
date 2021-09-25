@@ -1,11 +1,13 @@
 export default class MegaMenu {
     constructor(){
         this.init();
+        this.document = jQuery(document);
+        this.html = jQuery('html');
     }
 
     init () {
         let _ninside = 0;
-
+        let doc = jQuery(document);
         let isInside = function(_this) {
             if(_this.parent('.menu-item').length) {
                 _ninside
@@ -19,38 +21,37 @@ export default class MegaMenu {
         let str_menu = '';
 
         let outerOverflow = jQuery(".header .nav-slider");
-        $( "#menu-main>li.menu-item" ).mouseenter(
+        jQuery( "#menu-main>li.menu-item" ).mouseenter(
             function() {
                 // Hover again => auto clear Interval Timeout
                 clearInterval(m_interval);
-
                 // xác định tọa độ đối tượng
-                let _this = $(this);
+                let _this = jQuery(this);
                 n_overmouse = 1;
                
-                let classes = $(this).data('id_nam');
+                let classes = jQuery(this).data('id_nam');
                 // console.log(classes);
                 // Update liên tục nếu là PC
                 if(typeof classes === 'undefined') {
-                    $('.c_megamenu').addClass('is_hide').removeClass('is_show');
-                    $html.removeClass('megamn_has_showmn');
+                    jQuery('.c_megamenu').addClass('is_hide').removeClass('is_show');
+                    document.documentElement.classList.remove('megamn_has_showmn');
                 }
                 
 
 
                 // Scroll Move by position
-                let i = $(this),
+                let i = jQuery(this),
                 a = (i.offset().left, i.attr("menu-item"));
 
                 let n = outerOverflow.scrollLeft() + (i.offset().left - outerOverflow.offset().left);
                 outerOverflow.animate({
                     scrollLeft: n - (outerOverflow.width() / 2 - i.width() / 2 )
-                }, 100, function() {
+                }, 100, ()=> {
                     // Animation complete.
 
                     this.getAndShowMenu(_this, classes);
                     setTimeout(function(){
-                    $html.addClass('megamn_finish_scroll') 
+                    document.documentElement.addClass('megamn_finish_scroll') 
                     }, 1000);
 
                 });
@@ -61,45 +62,45 @@ export default class MegaMenu {
         );
 
         let m_interval = 0;
-        $document.on("mouseleave","html.megamn_has_showmn .header--main",
-            function() {
-                m_interval = setTimeout(function() {
+        doc.on("mouseleave","html.megamn_has_showmn .header--main",
+            () => {
+                m_interval = setTimeout(()=> {
                     n_overmouse--;
                     // console.log(n_overmouse);
                     
                     // Ẩn menu sau 2 giây -> hủy nếu ở trên phân vùng mega menu
-                    $('.c_megamenu').addClass('is_hide').removeClass('is_show');
-                    $html.removeClass('megamn_has_showmn');
+                    jQuery('.c_megamenu').addClass('is_hide').removeClass('is_show');
+                    this.html.removeClass('megamn_has_showmn');
                 }, 1000);
             }
         );
 
-        $document.on("mouseenter","html.megamn_has_showmn .c_megamenu",
+        doc.on("mouseenter","html.megamn_has_showmn .c_megamenu",
             function() {
                 clearInterval(m_interval);
             }
         ); 
 
-        $document.on("mouseleave","html.megamn_has_showmn .c_megamenu", 
-            function() {
+        doc.on("mouseleave","html.megamn_has_showmn .c_megamenu", 
+            ()=> {
                 n_overmouse--;
                 // console.log(n_overmouse);
                 
-                $('.c_megamenu').addClass('is_hide').removeClass('is_show');
-                $html.removeClass('megamn_has_showmn');
+                jQuery('.c_megamenu').addClass('is_hide').removeClass('is_show');
+                this.html.removeClass('megamn_has_showmn');
             }
         );
 
-        $( "#menu-main>li.menu-item" ).click(
-            function(e) {
-                let _this = $(this);
+        jQuery( "#menu-main>li.menu-item" ).click(
+            (e) =>{
+                let _this = jQuery(this);
                 let _classes = _this.data('id_nam');
-                let _is_megavisible = $('.c_megamenu[data-class="' + _classes + '"]').hasClass("is_show");
+                let _is_megavisible = jQuery('.c_megamenu[data-class="' + _classes + '"]').hasClass("is_show");
 
                 clearInterval(m_interval);
                 if(_is_megavisible) {
-                    $('.c_megamenu').addClass('is_hide').removeClass('is_show');
-                    $html.removeClass('megamn_has_showmn');
+                    jQuery('.c_megamenu').addClass('is_hide').removeClass('is_show');
+                    this.html.removeClass('megamn_has_showmn');
                 } else {
                     this.getAndShowMenu(_this, _classes);
                 }
@@ -107,12 +108,12 @@ export default class MegaMenu {
         );
 
         // Phát hiện và remove megamenu nếu scroll 
-        $('.header .nav-slider').scroll(function (event) {
+        jQuery('.header .nav-slider').scroll( (event) => {
             // Do something
-            if($html.hasClass('megamn_finish_scroll')) {
-                $('.c_megamenu').addClass('is_hide').removeClass('is_show');
-                $html.removeClass('megamn_has_showmn');
-                $html.removeClass('megamn_finish_scroll');
+            if(this.html.hasClass('megamn_finish_scroll')) {
+                jQuery('.c_megamenu').addClass('is_hide').removeClass('is_show');
+                this.html.removeClass('megamn_has_showmn');
+                this.html.removeClass('megamn_finish_scroll');
             }
         });
 
@@ -121,28 +122,28 @@ export default class MegaMenu {
     getAndShowMenu (_this, _classes) {
         let this_offset = _this.offset();
         let this_offset_poscenter = this_offset.left + _this.outerWidth() / 2 - 8;
-        let hmain_offset = $('.header--main').offset();
-        let hmain_offset_postop = hmain_offset.top + $('.header--main').outerHeight();
+        let hmain_offset = jQuery('.header--main').offset();
+        let hmain_offset_postop = hmain_offset.top + jQuery('.header--main').outerHeight();
 
         if( typeof _classes !== "undefined") {
 
             if(str_menu !== _classes) {
                 // Menu cũ ẩn đi
-                $('.c_megamenu[data-class="' + str_menu + '"]').addClass('is_hide').removeClass('is_show');
+                jQuery('.c_megamenu[data-class="' + str_menu + '"]').addClass('is_hide').removeClass('is_show');
                 // Menu thay biến tạm mới
                 str_menu = _classes;
             }
             // show menu mới lên
-            $('.c_megamenu[data-class="' + str_menu + '"]').addClass("is_show").removeClass('is_hide');
+            jQuery('.c_megamenu[data-class="' + str_menu + '"]').addClass("is_show").removeClass('is_hide');
 
             // set toa do
-            $('.c_megamenu[data-class="' + str_menu + '"]').css('top', hmain_offset_postop);
+            jQuery('.c_megamenu[data-class="' + str_menu + '"]').css('top', hmain_offset_postop);
 
             // center point
-            $('.c_megamenu[data-class="' + str_menu + '"] .c_megamenu__point').css('left', this_offset_poscenter);
+            jQuery('.c_megamenu[data-class="' + str_menu + '"] .c_megamenu__point').css('left', this_offset_poscenter);
 
             // add body class flag
-            $html.addClass('megamn_has_showmn');
+            this.html.addClass('megamn_has_showmn');
         }
 
         

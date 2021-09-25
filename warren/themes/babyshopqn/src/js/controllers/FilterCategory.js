@@ -1,20 +1,19 @@
 export default class FilterCategory {
     constructor(){
         this.init();
-        this.bindAction();
+        // this.bindAction();
         this.showProduct();
         this.bindCheckbox();
         this.mobileAction();
     }
 
     init() {
-        $('.brand__filter, ._cancel_filter, ._close_filterpanel').click(function(){
-            $('.c-popover--filter').removeClass('is_show').addClass('is_hide');
-            $html.removeClass('dlg_has_showmn');
+        jQuery('.brand__filter, ._cancel_filter, ._close_filterpanel').click(function(){
+            jQuery('.c-popover--filter').removeClass('is_show').addClass('is_hide');
 
         });
 
-        $('.filter_top ._cancel_filter ').click(function(){
+        jQuery('.filter_top ._cancel_filter ').click(function(){
             var this_parent = jQuery(this).closest('.filter_top');
             var _taxonomy   = this_parent.data('product_taxonomy');
             var _slug       = this_parent.data('product_slug');
@@ -22,13 +21,13 @@ export default class FilterCategory {
             jQuery('.category-list input[type="checkbox"]').prop( "checked", false );
             jQuery('.brand__filter-panel .custom-control-input').prop('checked', false);
             // Thực hiện ẩn
-            $('.filter_top ._displayresult').attr('data-nrsproduct', "");
+            jQuery('.filter_top ._displayresult').attr('data-nrsproduct', "");
         });
 
-        $('.filter_top ._cancel_filter').click(function(){
-            $('.products-list .product_containlist').fadeIn();
-            if($('.pos_ajax').length > 0) {
-                $('.pos_ajax').fadeOut();
+        jQuery('.filter_top ._cancel_filter').click(function(){
+            jQuery('.products-list .product_containlist').fadeIn();
+            if(jQuery('.pos_ajax').length > 0) {
+                jQuery('.pos_ajax').fadeOut();
             }
 
         });
@@ -36,21 +35,21 @@ export default class FilterCategory {
 
     bindShort(){
         jQuery(document).on('click', '.bar_sort > .btn_short', (e) => {
-            let button = $(this);
+            let button = jQuery(this);
             let data_sort = button.data('sort');
             let list_allcheck = [];
     
             // Cancel This Select
             if(button.hasClass('active')) {
                 button.removeClass('active');
-                $('.products-list .product_containlist').fadeIn();
-                if($('.pos_ajax').length > 0) {
-                    $('.pos_ajax').fadeOut();
+                jQuery('.products-list .product_containlist').fadeIn();
+                if(jQuery('.pos_ajax').length > 0) {
+                    jQuery('.pos_ajax').fadeOut();
                 }
                 return false;
             }
     
-            $('.bar_sort > .btn_short').removeClass('active');
+            jQuery('.bar_sort > .btn_short').removeClass('active');
             button.addClass('active');
     
     
@@ -94,13 +93,13 @@ export default class FilterCategory {
                 this.sortListByFeature(_arr_list, 'AVGREVIEW');                
             }
     
-            $('.products-list .product_containlist').fadeOut();
-            if ($('.pos_ajax').length > 0) {
-                $('.pos_ajax').fadeIn();
+            jQuery('.products-list .product_containlist').fadeOut();
+            if (jQuery('.pos_ajax').length > 0) {
+                jQuery('.pos_ajax').fadeIn();
             }
 
-            if (($('.products-list .product_containlist').next('.pos_ajax').length > 0) === false) {
-                $('.products-list .product_containlist').after('<div class="pos_ajax"></div>');
+            if ((jQuery('.products-list .product_containlist').next('.pos_ajax').length > 0) === false) {
+                jQuery('.products-list .product_containlist').after('<div class="pos_ajax"></div>');
             }
 
             let _str_content = '<div class="container"><div class="row"><div class="col"><div class="_x_inner_row"><h2 class="_x_notfofund_title">Chưa có bài viết hay sản phẩm nào ở đây</h2><p class="_x_notfofund_text"><span class="dis_block">Nội dung bạn đang tìm kiếm không được tìm thấy.</span></p></div></div></div></div>';
@@ -248,15 +247,15 @@ export default class FilterCategory {
             if(tempArray.length > 0) {
                 nrsproduct = this._check_jsonthis(tempArray).length;
             }
-            $('.filter_top ._displayresult').attr('data-nrsproduct', "(" + nrsproduct + ")");
+            jQuery('.filter_top ._displayresult').attr('data-nrsproduct', "(" + nrsproduct + ")");
         });
     }
 
     bindCheckbox(){
 
         // Action button checkbox
-        $('.filter_top ._displayresult').click(function(){
-            var button = $(this);
+        jQuery('.filter_top ._displayresult').click(function(){
+            var button = jQuery(this);
 
 
             // ======
@@ -285,17 +284,17 @@ export default class FilterCategory {
                 alert('Vui lòng nhập đầy đủ thông tin!')
                 return;
             } else {
-                $('.c-popover--filter').removeClass('is_show').addClass('is_hide');
-                $html.removeClass('dlg_has_showmn');
+                jQuery('.c-popover--filter').removeClass('is_show').addClass('is_hide');
+                document.parentElement.classList.remove('dlg_has_showmn');
             }
 
             // Thực hiện thay đổi hiển thị
-            $('.products-list .product_containlist').fadeOut();
-            if($('.pos_ajax').length > 0) {
-                $('.pos_ajax').fadeIn();
+            jQuery('.products-list .product_containlist').fadeOut();
+            if(jQuery('.pos_ajax').length > 0) {
+                jQuery('.pos_ajax').fadeIn();
             }
-            if(($('.products-list .product_containlist').next('.pos_ajax').length > 0) === false) {
-                $('.products-list .product_containlist').after('<div class="pos_ajax"></div>');
+            if((jQuery('.products-list .product_containlist').next('.pos_ajax').length > 0) === false) {
+                jQuery('.products-list .product_containlist').after('<div class="pos_ajax"></div>');
             }
 
             // Đổ dữ liệu filter ra giao diện
@@ -337,12 +336,12 @@ export default class FilterCategory {
 
     mobileAction(){
 
-        if($(window).width() < 426) {
-            $('.brand__filter-panel .category-caption').click(function(){
-                $(this).next().addClass('active')
+        if(jQuery(window).width() < 426) {
+            jQuery('.brand__filter-panel .category-caption').click(function(){
+                jQuery(this).next().addClass('active')
             });
-            $('.brand__filter-panel ._backcaption').click(function(){
-                $(this).parent().removeClass('active')
+            jQuery('.brand__filter-panel ._backcaption').click(function(){
+                jQuery(this).parent().removeClass('active')
             });
         }
     }

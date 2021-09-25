@@ -134,9 +134,9 @@ if  ($loop->have_posts() ):
 				}
 				// Unlimit for excerpt, default 500
 				// => limit by css
-				$_content = xenia_string_limit_words($product->get_short_description(), 500); 
+				$_content = babyshopqn_string_limit_words($product->get_short_description(), 500); 
 				if(empty(trim($_content))) {
-					$_content = xenia_string_limit_words($product->get_description(), 16);
+					$_content = babyshopqn_string_limit_words($product->get_description(), 16);
 				}
 
 

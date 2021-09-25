@@ -3,75 +3,64 @@
 <footer>
 	<div class="c-footer">
 		<div class="bbs2-container c-footer__menu-outer">
-			<div class="c-footer__colmenu">
-				<?php 
-					wp_nav_menu( array(
-					   'theme_location'  => 'secondary', 
-					   'menu_class'      => 'navbar-nav', 
-					   'before'          => '',
-					   'after'           => '',
-					   'link_before'     => '',
-					   'link_after'      => '',
-					   'depth'           => 0,
-					   'fallback_cb'     => '',                   
-					 
-					)); 
-				?>
-			</div>
-			<div class="c-footer__menuright">
-				<ul>
-					<li><?= __('THÔNG TIN DOANH NGHIỆP', 'bbs') ?></li>
-					<?php if ( have_rows( 'info_list', 'options' ) ) : ?>
-						<?php while ( have_rows( 'info_list', 'options' ) ) : the_row(); ?>
-						<li>
-							<strong><?php echo get_sub_field('title') ?></strong>
-							<p><?php echo get_sub_field('content') ?></p>
-						</li>
-						<?php endwhile; ?>
-					<?php endif; ?>
-					
-					<!-- <li>
-						<strong>Tên doanh nghiệp:</strong>
-						<p>CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN BEAUTIZON</p>
-					</li>
+			<?php if ( have_rows( 'info_list', 'options' ) ) : ?>
+				<?php while ( have_rows( 'info_list', 'options' ) ) : the_row(); ?>
+				<? $cols[get_sub_field('order')][] = '
 					<li>
-						<strong>Mã số thuế:</strong>
-						<p>0401837148 cấp bởi Sở Kế Hoạch và Đầu Tư Thành phố Đà Nẵng ngày 15 tháng 06 năm 2017</p>
-					</li>
-					<li>
-						<strong>Địa chỉ:</strong>
-						<p>168 Phan Đăng Lưu, Phường Hoà Cường Bắc, Quận Hải Châu, Đà Nẵng, Việt Nam</p>
-					</li> -->
-				</ul>
-			</div>
+						<strong>'. get_sub_field('title') .'</strong>
+						<p>'. get_sub_field('content') .'</p>
+					</li>';?>
+				<?php endwhile; ?>
+			<?php endif; ?>
 			<div class="c-footer__subscribe">
 				
 				<ul>
+					<? if ($cols[1]):?>
+						<?= implode('',$cols[1]) ;?>
+					<? endif;?>
+
+					
+				</ul>
+			</div>
+			
+			<div class="c-footer__menuright">
+				<ul>
+					<? if ($cols[2]):?>
+						<?= implode('',$cols[2]) ;?>
+					<? endif;?>
+				</ul>
+			</div>
+
+			<div class="c-footer__colmenu">
+				<ul>
+					<? if ($cols[3]):?>
+						<?= implode('',$cols[3]) ;?>
+					<? endif;?>
 					<li><?= __('ĐĂNG KÝ NHẬN TIN', 'bbs') ?></li>
 					<li>
-						<p><?= __('Để nhận những thông tin khuyến mãi đầy hấp dẫn từ chúng tôi:', 'bbs') ?></p>
+						<p><?= __('Để nhận những thông tin khuyến mãi và những ưu đãi mới nhất từ chúng tôi:', 'bbs') ?></p>
 						<div class="c-form-subscriber">
-							<?php echo do_shortcode('[contact-form-7 id="185" title="Subscriber Form Footer"]') ?>
+							<?php echo do_shortcode('[contact-form-7 id="2" title="Subscribe Form"]') ?>
 						</div>
 						<p><?= __('Theo dõi chúng tôi trên', 'bbs') ?></p>
 						<div class="list-social">
 							<?php if(get_field('info_facebook_social', 'option')): ?>
-							<a href="<?= get_field('info_facebook_social', 'option') ?>"><img src="<?= HOME_URX ?>/wp-content/uploads/2021/01/facebook-1.svg" alt="Facebook"></a>
+							<a href="<?= get_field('info_facebook_social', 'option') ?>"><img src="<?= WP_CONTENT_URL?>/uploads/2021/01/facebook-1.svg" alt="Facebook"></a>
 							<?php endif; ?>
 							<?php if(get_field('info_instagram_social_link', 'option')): ?>
-							<a href="<?= get_field('info_instagram_social_link', 'option') ?>"><img src="<?= HOME_URX ?>/wp-content/uploads/2021/01/instagram-1.svg" alt="instagram"></a>
+							<a href="<?= get_field('info_instagram_social_link', 'option') ?>"><img src="<?= WP_CONTENT_URL?>/uploads/2021/01/instagram-1.svg" alt="instagram"></a>
 							<?php endif; ?>
 							<?php if(get_field('info_tiktok_social_link', 'option')): ?>
-							<a href="<?= get_field('info_tiktok_social_link', 'option') ?>"><img src="<?= HOME_URX ?>/wp-content/uploads/2021/01/tiktok.svg" alt="tiktok"></a>
+							<a href="<?= get_field('info_tiktok_social_link', 'option') ?>"><img src="<?= WP_CONTENT_URL?>/uploads/2021/01/tiktok.svg" alt="tiktok"></a>
 							<?php endif; ?>
-							<p class="c-footer__thongbaobocongthuong"><img src="<?= THEME_CHILD_URI . '/assets/img/ticketxanh.png' ?>" alt="Da thong bao voi bo cong thuong icon"></p>
 						</div>
 					</li>
 				</ul>
 			</div>
+			
 		</div>
 		<div class="c-footer__copyright">
-			<p>Copyright <span class="c-footer__year"><?= date('Y') ?></span>. Beautizon. Designed and Developed by <a href="https://xenia.tech" title="Xenia Tech Site">Xenia Tech</a></p>
+			<p>Copyright <span class="c-footer__year"><?= date('Y') ?></span>. BabyshopQN. </p>
 		</div>
 	</div>
 </footer>
@@ -208,15 +197,7 @@
 		<div class="c-modal__content">
 			<div class="c-modal--promotion__area">
 				<div class="row">
-					<div class="col">
-						<div class="c-modal--promotion_form">
-							<p class="c-modal--promotion_title"><?= __('Cảm ơn bạn đã ghé thăm Beautizon', 'bbs') ?></p>
-							<p class="c-modal--promotion_description"><?= __('Đăng ký để nhận ngay 1 Natio toner miễn phí bạn nhé!', 'bbs') ?></p>
-							<?= do_shortcode('[contact-form-7 id="320" title="Form for Promotion"]') ?>
-							<div class="c-modal--promotion_note"><?php printf(__('Bằng việc click vào "Đăng ký", bạn đã đồng ý với các <a href="%1$s">điều kiện</a>, <a href="%2$s">chính sách bảo mật</a> của Beautizon và sẽ nhận được những thông báo từ Beautizon.', 'bbs'), $_option_modal_privacy_link['url'], $_option_modal_terms_of_use['url'] ) ?>
-							</div>
-						</div>
-					</div>
+					
 					<div class="col c-modal--promotion_image">
 						
 						<?php 
@@ -314,53 +295,6 @@
 	<span class="c-popover__close"></span>
 </div>
 
-
-
-<div class="oplc">
-	<div id="fb-root"></div>
-	<script>
-		if(jQuery(window).width() > 768)  {
-			var oc = 0;
-			var view_message_fb = function() {
-				if(oc === 0) {
-					jQuery('#fb-root').after('<div class="fb-customerchat view" attribution=setup_tool page_id="165522380665910" theme_color=#2fa483ff logged_in_greeting="Chào bạn! Beautizon chúng tôi có thể giúp điều gì?" logged_out_greeting="Chào bạn! Beautizon chúng tôi giúp bạn điều gì?" greeting_dialog_display=show ref=https://m.me/Beautizon.com.vn> </div>');
-					window.fbAsyncInit = function() { 
-						FB.init({ xfbml: true, version: "v3.2" }) };
-						(function(e, a, f) { var c, b = e.getElementsByTagName(a)[0]; if (e.getElementById(f)) { return } c = e.createElement(a);
-					    c.id = f;
-					    c.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-					    b.parentNode.insertBefore(c, b) }(document, "script", "facebook-jssdk"));
-					oc=1;
-				}
-					
-			}
-			// Scroll
-			document.addEventListener("scroll", function(){
-				if(oc === 0) {
-					view_message_fb();
-					oc=1;
-				}
-			});
-			// Timeout
-			jQuery( document ).ready(function() {
-				setTimeout(view_message_fb, 3000);
-			});
-		}
-	</script>
-</div>
-<div class="oslp">
-	<a href="https://m.me/Beautizon.com.vn" target="_blank" style="
-	    color: #2fa483ff;
-	    position: fixed;
-	    bottom: 70px;
-	    right: 10px;
-	    border-radius: 50%;
-	    background: #fff;
-	    box-shadow: 0 0 20px #2fa483ff inset;
-
-	    z-index: 2;
-	"><svg height="50px" viewBox="0 0 512 512" width="50px" xmlns="http://www.w3.org/2000/svg"><path fill="#2fa483ff" d="m241.574219 210.210938-82.953125 87.828124 75.492187-41.421874 39.445313 41.421874 82.488281-87.828124-74.65625 40.695312zm0 0"/><path  fill="#2fa483ff" d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm2 393.035156c-15.847656 0-31.144531-2.238281-45.535156-6.382812l-51.625 29.347656v-55.210938c-34.578125-26.3125-56.660156-66.386718-56.660156-111.269531 0-79.265625 68.867187-143.519531 153.820312-143.519531 84.957031 0 153.820312 64.253906 153.820312 143.519531 0 79.257813-68.863281 143.515625-153.820312 143.515625zm0 0"/></svg></a>
-</div>
 <?= $script_footer ?>
 </body>
 </html>

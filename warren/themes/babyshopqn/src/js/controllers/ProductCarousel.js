@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 
 export default class CarouselProductList {
 
@@ -7,14 +7,14 @@ export default class CarouselProductList {
     }
 
     init() {
-        let elm = $(".c-carousel-product-list .swiper-container"),
+        let elm = jQuery(".c-carousel-product-list .swiper-container"),
             swiper = null,
             _arrtimeduration = null,
             _timeDelay = null,
             sliderOption = null
             ;
         elm.each(function(){
-            var _this = $(this);
+            var _this = jQuery(this);
             var _select = '[data-swiperid="' + _this.data('swiperid') + '"]', 
                 swiper_nextid = '[data-swiper_nextid="' + _this.data('swiperid') + '"]', 
                 swiper_previd = '[data-swiper_previd="' + _this.data('swiperid') + '"]',
@@ -87,9 +87,9 @@ export default class CarouselProductList {
             });
 
 
-            $(this).hover(function() {
+            jQuery(this).hover(() => {
                 swiper.autoplay.stop();
-            }, function() {
+            }, () => {
                 swiper.autoplay.start();
             });
         });

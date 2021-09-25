@@ -235,7 +235,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "https:\/\/www.facebook.com\/Beautizon.com.vn\/",
+            "default_value": "https:\/\/www.facebook.com\/BabyshopQN.com.vn\/",
             "placeholder": ""
         },
         {
@@ -251,7 +251,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "https:\/\/www.instagram.com\/beautizonvietnam\/",
+            "default_value": "https:\/\/www.instagram.com\/BabyshopQNvietnam\/",
             "placeholder": ""
         },
         {
@@ -269,6 +269,22 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_6005c131f90ab",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_60059d7c36010",
@@ -312,7 +328,7 @@
                     "key": "field_60059dd436012",
                     "label": "Content",
                     "name": "content",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -321,29 +337,39 @@
                         "class": "",
                         "id": ""
                     },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
                     "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": 3,
-                    "new_lines": "br"
+                    "delay": 0
+                },
+                {
+                    "key": "field_612578890cf69",
+                    "label": "Order",
+                    "name": "order",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "1": "Order 1",
+                        "2": "Order 2",
+                        "3": "Order 3"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 }
             ]
-        },
-        {
-            "key": "field_6005c131f90ab",
-            "label": "Footer",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
         },
         {
             "key": "field_601f5f94540d1",
@@ -433,5 +459,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612679522
+    "modified": 1629845717
 }

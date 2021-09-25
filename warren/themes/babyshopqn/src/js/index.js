@@ -10,6 +10,8 @@ import FilterCategory from "./controllers/FilterCategory";
 import OrderBy from "./controllers/OrderBy";
 import ProductSlider from "./controllers/ProductSlider";
 import MegaMenu from "./controllers/MegaMenu";
+import LazyLoadW from "./controllers/LazyLoadW";
+import Modal from "./controllers/Modals";
 import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
 
 (function($) {
@@ -356,8 +358,7 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
                         button.removeClass('_loading');
                         if (this_current_page == this_max_page)
                             button.remove();
-
-                        lazyLoad(true);
+                        new  LazyLoadW;
                     } else {
                         button.remove();
                     }
@@ -407,22 +408,18 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
     }
 
     // Dom Ready
-    $(function() {
+    $(function($) {
         initSetup();
         loadSVG();
         new HeroSlider;
         new CarouselProductList;
         editToggle();
         myAccountNav();
-        navSlider();
-        heroSlider();
         new ProductSingleTabContent;
         new MegaMenu;
         new ProductSlider;
         catSidebar();
         activeNiceSelect();
-        carouselProductList();
-        showModal();
         new PopOver;
         actionHelpful();
         ajaxLogin();
@@ -430,6 +427,8 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
         new FilterCategory;
         modalTrigger();
         new OrderBy;
+        new LazyLoadW;
+        new Modal;
         actionClickView();
         bindLoad();
         blogLoader();

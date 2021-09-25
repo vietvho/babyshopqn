@@ -8,6 +8,9 @@ function loadSVG(){
         var imgURL = $img.attr('src');
 
         jQuery.get(imgURL, function(data) {
+            if  (!data) {
+                return;
+            }
             // Get the SVG tag, ignore the rest
             var $svg = jQuery(data).find('svg');
 

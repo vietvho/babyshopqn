@@ -93,7 +93,7 @@ function bbsGetTaxLevel($id, $tax) {
       $_template['id']      = $_id_product;
       $_template['title']   = get_the_title();
       $_template['link']    = get_permalink();
-      // $_template['content'] = xenia_string_limit_words(get_the_content(), 16);
+      // $_template['content'] = babyshopqn_string_limit_words(get_the_content(), 16);
       $_template['content'] = $product->get_short_description();
       $_template['timesptamp'] = get_post_timestamp($_id_product);
 

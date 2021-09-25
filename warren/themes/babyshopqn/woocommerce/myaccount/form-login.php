@@ -114,13 +114,13 @@ if (!$form_get ):
 				<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" name="register" value="<?php esc_attr_e( 'Đăng ký', 'woocommerce' ); ?>"><?php esc_html_e( 'Đăng ký', 'woocommerce' ); ?></button>
 			</p>
             <p>
-            <?php _e('Bằng cách nhấp vào “Tham gia ngay bây giờ”, bạn xác nhận rằng bạn đồng ý với Beautizon’s','bbs');
+            <?php _e('Bằng cách nhấp vào “Tham gia ngay bây giờ”, bạn xác nhận rằng bạn đồng ý với BabyshopQN’s','bbs');
 			printf(' <a href="%1$s">%2$s</a>, ',get_translate_url('/chinh-sach-bao-mat'),__('Chính sách bảo mật','bbs'));
 			printf('<a href="%1$s">%2$s</a>, ',get_translate_url('/dieu-khoan-chung'),__('Điều khoản chung','bbs'));
 			printf('<a href="%1$s">%2$s</a>.',get_translate_url('/chinh-sach-mua-hang'),__('Chính sách mua hàng','bbs'));?>
             </p>
             <p>
-            <?php _e('Beautizon uses Google ReCaptcha and by registering, users are subject to ','bbs');
+            <?php _e('BabyshopQN uses Google ReCaptcha and by registering, users are subject to ','bbs');
             printf('<a href="%1$s">%2$s</a> and <a href="%3$s">%4$s</a>','https://policies.google.com/privacy',__('Privacy Policy','bbs'),'https://policies.google.com/terms',__('Terms of Service','bbs'));
             ?>
             </p>

@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 
 export default class ProductSlider{
     constructor(){
@@ -6,7 +6,7 @@ export default class ProductSlider{
     }
 
     init(){
-        if ($(document).width() > 767){
+        if (jQuery(document).width() > 767){
             let galleryThumbs = new Swiper('.c-product__slider .product-gallery', {
                 spaceBetween: 30,
                 slidesPerView: 3,
@@ -39,7 +39,7 @@ export default class ProductSlider{
             });
 
             // Hover pause
-            $('.c-product__slider .product-image').hover(function() {
+            jQuery('.c-product__slider .product-image').hover(function() {
                 galleryTop.autoplay.stop();
             }, function() {
                 galleryTop.autoplay.start();
@@ -59,7 +59,7 @@ export default class ProductSlider{
             });
             
             // Hover pause
-            $('.c-product__slider .product-image').hover(function() {
+            jQuery('.c-product__slider .product-image').hover(function() {
                 galleryTop.autoplay.stop();
             }, function() {
                 galleryTop.autoplay.start();

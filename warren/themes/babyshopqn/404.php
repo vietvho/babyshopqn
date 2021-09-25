@@ -17,7 +17,7 @@
 	            </div>
                <div>
                	<a href="<?= HOME_URX ?>" class="_btndefault"><?=  __('Trang chủ', 'bbs'); ?></a>
-               	<a href="<?= HOME_URX ?>/beautizon" class="_btndefault"><?=  __('Về Beautizon', 'bbs'); ?></a>
+               	<a href="<?= HOME_URX ?>/BabyshopQN" class="_btndefault"><?=  __('Về BabyshopQN', 'bbs'); ?></a>
                </div>
 
 	        </div>

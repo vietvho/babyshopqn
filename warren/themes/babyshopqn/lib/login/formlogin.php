@@ -11,7 +11,7 @@ function wp_login_form_header( $args = array(), $redirect = null ) {
         'label_log_in'   => __( 'Log In' ),
         'label_signup'   => __( 'Đăng ký' ),
         'label_forgot'   => __( 'Forgot?' ),
-        'label_text'     => __( 'Mới sử dụng Beautizon?' ),
+        'label_text'     => __( 'Mới sử dụng BabyshopQN?' ),
         'id_username'    => 'user_login',
         'id_password'    => 'user_pass',
         'id_remember'    => 'rememberme',

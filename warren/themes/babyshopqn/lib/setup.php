@@ -352,7 +352,7 @@ add_filter( 'wpcf7_autop_or_not', '__return_false' );
 // ================
 // Limit Word
 // ================
-function xenia_string_limit_words($content, $length)
+function babyshopqn_string_limit_words($content, $length)
 {
 
   $length = ($length ? $length : 120);
@@ -449,7 +449,7 @@ ob_start();?>
        <div>
         <h1 class="page-title"><?= $_REQUEST['message']; ?></h1>
         <div class="success-description">
-           <p><?php _e('Cảm ơn bạn đã mua sắm cùng Beautizon.','bbs');?></p>
+           <p><?php _e('Cảm ơn bạn đã mua sắm cùng BabyshopQN.','bbs');?></p>
            <p><?php _e('Vui lòng kiểm tra email của bạn để biết thông tin chi tiết về đơn hàng','bbs');?> 
            <?php if (is_user_logged_in()){
              _e(' hoặc truy cập','bbs');

@@ -81,9 +81,9 @@ if ( post_password_required() ) {
 					</ul>
 				</div>
 				<?php
-					$_content = xenia_string_limit_words($product->post->post_excerpt, 500); 
+					$_content = babyshopqn_string_limit_words($product->post->post_excerpt, 500); 
 					if(empty(trim($_content))) {
-						$_content = xenia_string_limit_words($product->post->post_content, 16);
+						$_content = babyshopqn_string_limit_words($product->post->post_content, 16);
 					}
 				?>
 				<p class="popup-product-content"><?php echo $_content; ?></p>

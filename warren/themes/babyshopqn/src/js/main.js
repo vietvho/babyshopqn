@@ -90,7 +90,7 @@
     var carouselProductList = function(){
 
 
-        var elm = $(".c-carousel-product-list .swiper-container"),
+        var elm = jQuery(".c-carousel-product-list .swiper-container"),
             swiper = null,
             _arrtimeduration = null,
             _timeDelay = null,

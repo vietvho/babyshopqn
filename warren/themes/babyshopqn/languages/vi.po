@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Beautizon\n"
+"Project-Id-Version: BabyshopQN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-03 07:34+0000\n"
 "PO-Revision-Date: 2021-02-07 03:23+0000\n"
@@ -100,16 +100,16 @@ msgid "Basket"
 msgstr "Giỏ hàng"
 
 #. Name of the theme
-msgid "Beautizon"
+msgid "BabyshopQN"
 msgstr ""
 
 #. Author of the theme
-msgid "Beautizon Team"
+msgid "BabyshopQN Team"
 msgstr ""
 
 #: woocommerce/myaccount/form-login.php:123
 msgid ""
-"Beautizon uses Google ReCaptcha and by registering, users are subject to "
+"BabyshopQN uses Google ReCaptcha and by registering, users are subject to "
 msgstr ""
 
 #: lib/woocommerce/login_register_form.php:73
@@ -127,8 +127,8 @@ msgstr "Mua ngay"
 #: footer.php:209
 #, php-format
 msgid ""
-"By clicking \"Join Now\" you acknowledge that you are agree to Beautizon’s "
-"%1$s, %2$s, and to automatically receive Beautizon offers and notifications "
+"By clicking \"Join Now\" you acknowledge that you are agree to BabyshopQN’s "
+"%1$s, %2$s, and to automatically receive BabyshopQN offers and notifications "
 "via email."
 msgstr ""
 
@@ -143,7 +143,7 @@ msgstr ""
 #: woocommerce/myaccount/form-login.php:117
 msgid ""
 "Bằng cách nhấp vào “Tham gia ngay bây giờ”, bạn xác nhận rằng bạn đồng ý với "
-"Beautizon’s"
+"BabyshopQN’s"
 msgstr ""
 
 #: woocommerce/myaccount/dashboard.php:89
@@ -188,7 +188,7 @@ msgid "Contact us to change"
 msgstr "Liên hệ đổi ngày sinh"
 
 #: lib/setup.php:460
-msgid "Cảm ơn bạn đã mua sắm cùng Beautizon."
+msgid "Cảm ơn bạn đã mua sắm cùng BabyshopQN."
 msgstr ""
 
 #: lib/post_type/product.php:20
@@ -495,7 +495,7 @@ msgid "Vận chuyển & Trả hàng"
 msgstr ""
 
 #: 404.php:20
-msgid "Về Beautizon"
+msgid "Về BabyshopQN"
 msgstr ""
 
 #: lib/woocommerce/setup.php:23
@@ -527,7 +527,7 @@ msgid "Xem tất cả"
 msgstr ""
 
 #. Description of the theme
-msgid "Xenia Build it"
+msgid "babyshopqn Build it"
 msgstr ""
 
 #: lib/helper.php:37

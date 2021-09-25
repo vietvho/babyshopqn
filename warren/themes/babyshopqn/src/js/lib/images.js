@@ -1,48 +1,59 @@
-var lazyImages = '';
-var inAdvance = 300;
-var isActionLoad = false;
+export default class LazyLoadW {
+  constructor(){
+    var lazyImages = '';
+    var inAdvance = 300;
+    var isActionLoad = false;
+    this.lazyLoad();
+    this.bindEvent();
+  }
 
-function lazyLoad(is_manual) {
-  type = (typeof type !== 'undefined') ?  is_manual : false;
-  
-  lazyImages = [...document.querySelectorAll('.lazy-img')];
-  lazyImages.forEach(image => {
-    if (window.getComputedStyle(image).display !== "none") {
-        isActionLoad = false;
-        if (image.offsetTop < window.innerHeight + window.pageYOffset + inAdvance) {
-          isActionLoad = true;
-        }
-        if(is_manual) {
-          isActionLoad = true; 
-        } 
-        if(isActionLoad) {
-          image.src = image.dataset.src;
-          // console.log(image.src);
-          if(image.dataset.alt) {
-            image.alt = image.dataset.alt;
+  lazyLoad(is_manual) {
+    console.log('trigger');
+    let lazyImages = document.querySelectorAll('.lazy-img');
+    lazyImages.forEach(image => {
+      if (window.getComputedStyle(image).display !== "none") {
+          isActionLoad = false;
+          if (image.offsetTop < window.innerHeight + window.pageYOffset + inAdvance) {
+            isActionLoad = true;
+          }
+          if(is_manual) {
+            isActionLoad = true; 
+          } 
+          if(isActionLoad) {
+            image.src = image.dataset.src;
+            // console.log(image.src);
+            if(image.dataset.alt) {
+              image.alt = image.dataset.alt;
+            }
+
+            image.onload = () => image.classList.add('loaded');
+            image.classList.remove("lazy-img");
           }
 
-          image.onload = () => image.classList.add('loaded');
-          image.classList.remove("lazy-img");
-        }
-
-    }
-  }); // if all loaded removeEventListener
-}
+      }
+    }); // if all loaded removeEventListener
+  }
 
 
-lazyLoad();
-window.addEventListener('scroll', lazyLoad);
-window.addEventListener('resize', lazyLoad);
-window.addEventListener("orientationchange", lazyLoad);
+  bindEvent(){
+    window.addEventListener('scroll', this.lazyLoad());
+    window.addEventListener('resize', this.lazyLoad());
+    window.addEventListener("orientationchange", this.lazyLoad());
+    document.addEventListener("DOMContentLoaded", this.lazyLoadV2() );
+    document.addEventListener("scroll", this.lazyLoadV2());
+    window.addEventListener("resize",this.lazyLoadV2());
+    window.addEventListener("orientationchange", this.lazyLoadV2());
+    this.lazyLoadBg();
+    window.addEventListener('scroll', this.lazyLoadBg());
+    window.addEventListener('resize', this.lazyLoadBg());
+  }
 
-// Image Lazyload
-// This goes in the JS file
-document.addEventListener("DOMContentLoaded", function() {
-  let lazyImages = [].slice.call(document.querySelectorAll(".lazy-img-v2"));
-  let active = false;
+  // Image Lazyload
+  // This goes in the JS file
+  lazyLoadV2() {
+    let lazyImages = [].slice.call(document.querySelectorAll(".lazy-img-v2");
+    let active = false;
 
-  const lazyLoadV2 = function() {
     if (active === false) {
       active = true;
 
@@ -73,37 +84,22 @@ document.addEventListener("DOMContentLoaded", function() {
         active = false;
       }, 250);
     }
-  };
-  lazyLoadV2();
-  document.addEventListener("scroll", lazyLoadV2);
-  window.addEventListener("resize", lazyLoadV2);
-  window.addEventListener("orientationchange", lazyLoadV2);
-});
+  }
 
-
-
-
-
-
-
-
-// Background
-let lazyImagesBg = [...document.querySelectorAll('[data-lazybgimg]')];
-let inAdvanceBg = 300;
-
-function lazyLoadBg() {
-  lazyImagesBg.forEach(image => {
-    if (window.getComputedStyle(image).display !== "none") {
-        if (image.offsetTop < window.innerHeight + window.pageYOffset + inAdvanceBg) {
-	        
-	        image.style.backgroundImage = "url('" + image.dataset.lazybgimg + "')";
-	        
-	        image.onload = () => image.classList.add('loaded');
-        }
-    }
-  }); // if all loaded removeEventListener
+  lazyLoadBg() {
+      // Background
+    let lazyImagesBg = [...document.querySelectorAll('[data-lazybgimg]')];
+    let inAdvanceBg = 300;
+    lazyImagesBg.forEach(image => {
+      if (window.getComputedStyle(image).display !== "none") {
+          if (image.offsetTop < window.innerHeight + window.pageYOffset + inAdvanceBg) {
+            
+            image.style.backgroundImage = "url('" + image.dataset.lazybgimg + "')";
+            
+            image.onload = () => image.classList.add('loaded');
+          }
+      }
+    }); // if all loaded removeEventListener
+  }
+  
 }
-
-lazyLoadBg();
-window.addEventListener('scroll', lazyLoadBg);
-window.addEventListener('resize', lazyLoadBg);

@@ -1,7 +1,7 @@
 export default class OrderBy {
     constructor(){
-        $('.orderby').on('change',function(){
-            this.insertParam('orderby',$(this).val());
+        jQuery('.orderby').on('change',function(){
+            this.insertParam('orderby',jQuery(this).val());
         })
     }
 

@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 export default class HeroSlider {
     constructor(){
         this.init();

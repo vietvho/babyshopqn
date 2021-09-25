@@ -7,7 +7,7 @@ define('HOME_URX', home_url());
 define('SITE_URX', site_url());
 define('ROOT_URL', THEME_CHILD_URI);
 
-define('IMG_NOTFOUND', THEME_CHILD_URI . '/assets/img/xenia-team-big.jpg');
+define('IMG_NOTFOUND', THEME_CHILD_URI . '/assets/img/babyshopqn-team-big.jpg');
 define('IMG_CAT_NOTFOUND', THEME_CHILD_URI . '/assets/img/Cover.png');
 
 
