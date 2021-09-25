@@ -28,5 +28,6 @@ jobs:
         # cache: 'npm'
     # - working-directory: ~/httpdocs/babyshopqn/warren/themes/babyshopqn
     # - run: cd ~/httpdocs/babyshopqn/warren/themes/babyshopqn
+    - run: cd babyshopqn/warren/themes/babyshopqn
     - run: npm install yarn
     - run: yarn build   
