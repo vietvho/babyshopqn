@@ -5,12 +5,12 @@ const postcssPresetEnv = require('postcss-preset-env');
 const devMode = false;
 module.exports = {
   entry: [
-    './src/js/index.js',
-    './src/sass/main.scss'      // file nguồn  CSS
+    './warren/themes/babyshopqn/src/js/index.js',
+    './warren/themes/babyshopqn/src/sass/main.scss'      // file nguồn  CSS
   ],
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname,"../assets/js")
+    path: path.resolve(__dirname,"../warren/themes/babyshopqn/assets/js")
   },
   module: {
     rules: [
