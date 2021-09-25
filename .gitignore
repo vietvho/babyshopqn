@@ -30,6 +30,7 @@ assets
 *.tar
 *.zip
 *.psd
+node_modules
 warren/themes/babyshopqn/node_modules
 warren/uploads
 
