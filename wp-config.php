@@ -23,7 +23,6 @@
 
 include_once('_DBconfig.php');
 
-
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
 
