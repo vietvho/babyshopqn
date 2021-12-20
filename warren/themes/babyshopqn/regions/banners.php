@@ -7,7 +7,7 @@ if (!is_array($banners)) return;
     <div class="row">
         <?php foreach ($banners as $banner):?>
             <div class="<?= $row['columns'];?>" >
-                <div class="banner-content" data-lazybgimg="<?= $banner['banner_image']; ?>"><?= $banner['banner_content'];?></div>
+                <div class="banner-content" style="background-image:urL(<?= $banner['banner_image']; ?>)"><?= $banner['banner_content'];?></div>
             </div>
         <?php endforeach;?>
     </div>
