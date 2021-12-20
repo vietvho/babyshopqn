@@ -29,7 +29,6 @@ jobs:
     # - run: cd ~/httpdocs/babyshopqn/warren/themes/babyshopqn
     # - run: cd babyshopqn/warren/themes/babyshopqn
     - run: cd ~/babyshopqn/babyshopqn
-    - run: git checkout main
     - run: npm install yarn
     - run: yarn install
     - run: yarn build   
