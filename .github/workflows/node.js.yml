@@ -32,7 +32,7 @@ jobs:
     - run: mkdir -p ~/babyshopqn
     - run: mkdir -p ~/babyshopqn/tmp
     - run: cd ~/babyshopqn/tmp
-    - run: sudo rm -rf !("warren")
+    - run: sudo rm -rf 
     - run: mkdir -p warren
     - run: mkdir -p warren/uploads
     - run: cd warren
