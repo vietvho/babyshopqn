@@ -25,23 +25,13 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        # cache: 'npm'
-    # - working-directory: ~/httpdocs/babyshopqn/warren/themes/babyshopqn
-    # - run: cd ~/httpdocs/babyshopqn/warren/themes/babyshopqn
-    # - run: cd babyshopqn/warren/themes/babyshopqn
+
     - run: mkdir -p ~/babyshopqn
-    - run: mkdir -p ~/babyshopqn/tmp
-    - run: cd ~/babyshopqn/tmp
-    - run: sudo rm -rf 
-      with:  
-        username: warren
-        password: a1b2c34e6
-    - run: mkdir -p warren
-    - run: mkdir -p warren/uploads
-    - run: cd warren
-    - run: sudo rm -rf !("uploads")
-    # - run: git checkout main
-    # - run: npm install yarn
-    # - run: yarn install
-    # - run: yarn build   
+    - run: cd ~/babyshopqn
+    - run: [ -d babyshopqn/.git ] && cd babyshopqn && git pull || git clone 
+    - run: [ -d babyshopqn/.git ] && cd babyshopqn
+    - run: git checkout main
+    - run: npm install yarn
+    - run: yarn install
+    - run: yarn build   
     - run: echo '<? define( "DB_NAME", "${{ secrets.DB_NAME }}" );define( "DB_USER", "${{ secrets.DB_USER }}" );define( "DB_PASSWORD", "${{ secrets.DB_PASSWORD }}" ); ?>' > _DBconfig.php
