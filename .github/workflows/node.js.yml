@@ -29,8 +29,7 @@ jobs:
     # - working-directory: ~/httpdocs/babyshopqn/warren/themes/babyshopqn
     # - run: cd ~/httpdocs/babyshopqn/warren/themes/babyshopqn
     # - run: cd babyshopqn/warren/themes/babyshopqn
-    - run: cd ~/babyshopqn/babyshopqn
-    - run: ls -la
+    - run: cd ~/babyshopqn/test
     - run: echo "hello"
     # - run: git checkout main
     - run: npm install yarn
