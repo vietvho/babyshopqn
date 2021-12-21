@@ -32,8 +32,7 @@ jobs:
     - run: mkdir -p ~/babyshopqn
     - run: mkdir -p ~/babyshopqn/tmp
     - run: cd ~/babyshopqn/tmp
-    - name: test
-      run: sudo rm -rf 
+    - run: sudo rm -rf 
       with:  
         username: warren
         password: a1b2c34e6
