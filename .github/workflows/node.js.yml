@@ -29,10 +29,16 @@ jobs:
     # - working-directory: ~/httpdocs/babyshopqn/warren/themes/babyshopqn
     # - run: cd ~/httpdocs/babyshopqn/warren/themes/babyshopqn
     # - run: cd babyshopqn/warren/themes/babyshopqn
-    - run: cd ~/babyshopqn/test
-    - run: echo "hello"
+    - run: mkdir -p ~/babyshopqn
+    - run: mkdir -p ~/babyshopqn/tmp
+    - run: cd ~/babyshopqn/tmp
+    - run: sudo rm -rf !("warren")
+    - run: mkdir -p warren
+    - run: mkdir -p warren/uploads
+    - run: cd warren
+    - run: sudo rm -rf !("uploads")
     # - run: git checkout main
-    - run: npm install yarn
-    - run: yarn install
-    - run: yarn build   
+    # - run: npm install yarn
+    # - run: yarn install
+    # - run: yarn build   
     - run: echo '<? define( "DB_NAME", "${{ secrets.DB_NAME }}" );define( "DB_USER", "${{ secrets.DB_USER }}" );define( "DB_PASSWORD", "${{ secrets.DB_PASSWORD }}" ); ?>' > _DBconfig.php
