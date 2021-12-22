@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - run: mkdir -p ~/babyshopqn
-    - run: cd ~/babyshopqn
+    # - run: cd ~/babyshopqn
     - run: ls -la
     # - run: \[ -d babyshopqn/.git \] && cd babyshopqn && git pull || git clone  git@github.com:vietvho/babyshopqn.git babyshopqn
     # - run: \[ -d babyshopqn/.git \] && cd babyshopqn
