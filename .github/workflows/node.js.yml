@@ -26,18 +26,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    # - run: mkdir -p ~/babyshopqn
-    # - run: cd ~
-    - name: check directory
-      run: ls -la
-      working-directory: /home/warren
     - name: build website
       run: \[ -d babyshopqn/.git \] && cd babyshopqn && git pull || git clone  git@github.com:vietvho/babyshopqn.git babyshopqn
       working-directory: /home/warren/babyshopqn
-    - run: ls -la
-    # - run: \[ -d babyshopqn/.git \] && cd babyshopqn
-    # - run: git checkout main
-    # - run: npm install yarn
-    # - run: yarn install
-    # - run: yarn build   
-    # - run: echo '<? define( "DB_NAME", "${{ secrets.DB_NAME }}" );define( "DB_USER", "${{ secrets.DB_USER }}" );define( "DB_PASSWORD", "${{ secrets.DB_PASSWORD }}" ); ?>' > _DBconfig.php
+    - run: git checkout main
+    - run: npm install yarn
+    - run: yarn install
+    - run: yarn build   
+    - run: echo '<? define( "DB_NAME", "${{ secrets.DB_NAME }}" );define( "DB_USER", "${{ secrets.DB_USER }}" );define( "DB_PASSWORD", "${{ secrets.DB_PASSWORD }}" ); ?>' > _DBconfig.php
