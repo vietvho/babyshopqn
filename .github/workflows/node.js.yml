@@ -28,7 +28,8 @@ jobs:
 
     - run: mkdir -p ~/babyshopqn
     - run: cd ~
-    - run: ls -la
+    - name: check directory
+      run: ls -la
       working-directory: ~
     # - run: \[ -d babyshopqn/.git \] && cd babyshopqn && git pull || git clone  git@github.com:vietvho/babyshopqn.git babyshopqn
     # - run: \[ -d babyshopqn/.git \] && cd babyshopqn
