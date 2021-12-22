@@ -26,8 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - run: mkdir -p ~/babyshopqn
-    - run: cd ~
+    # - run: mkdir -p ~/babyshopqn
+    # - run: cd ~
     - name: check directory
       run: ls -la
       working-directory: ./
