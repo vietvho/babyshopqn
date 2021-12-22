@@ -31,7 +31,8 @@ jobs:
     - name: check directory
       run: ls -la
       working-directory: ./
-    # - run: \[ -d babyshopqn/.git \] && cd babyshopqn && git pull || git clone  git@github.com:vietvho/babyshopqn.git babyshopqn
+    - run: \[ -d babyshopqn/.git \] && cd babyshopqn && git pull || git clone  git@github.com:vietvho/babyshopqn.git babyshopqn
+    - run: ls -la
     # - run: \[ -d babyshopqn/.git \] && cd babyshopqn
     # - run: git checkout main
     # - run: npm install yarn
