@@ -30,11 +30,10 @@ jobs:
     - run: cd ~
     - name: check directory
       run: ls -la
-      working-directory: ./
-    # - run: \[ -d babyshopqn/.git \] && cd babyshopqn && git pull || git clone  git@github.com:vietvho/babyshopqn.git babyshopqn
+    - run: \[ -d babyshopqn/.git \] && cd babyshopqn && git pull || git clone  git@github.com:vietvho/babyshopqn.git babyshopqn
     # - run: \[ -d babyshopqn/.git \] && cd babyshopqn
-    # - run: git checkout main
-    # - run: npm install yarn
-    # - run: yarn install
-    # - run: yarn build   
-    # - run: echo '<? define( "DB_NAME", "${{ secrets.DB_NAME }}" );define( "DB_USER", "${{ secrets.DB_USER }}" );define( "DB_PASSWORD", "${{ secrets.DB_PASSWORD }}" ); ?>' > _DBconfig.php
+    - run: git checkout main
+    - run: npm install yarn
+    - run: yarn install
+    - run: yarn build   
+    - run: echo '<? define( "DB_NAME", "${{ secrets.DB_NAME }}" );define( "DB_USER", "${{ secrets.DB_USER }}" );define( "DB_PASSWORD", "${{ secrets.DB_PASSWORD }}" ); ?>' > _DBconfig.php
