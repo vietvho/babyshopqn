@@ -98,10 +98,12 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
                 'data': idComment,
                 'security' : $('head meta[name="security_ajax_refer"]').attr('content'),
             };
+
             $.ajax({ // you can also use $.post here
                 url : bbs_theme_ajaxurl, // AJAX handler
                 data : data,
                 type : 'POST',
+                crossDomain:true,
                 beforeSend : function ( xhr ) {
                     // button.text('Loading...'); // change the button text, you can also add a preloader image
                 },
@@ -118,6 +120,7 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
             });
         });
     }
+
     // function login form popup
     var ajaxLogin = function(){
         $('form#loginform').submit(function(event) {
@@ -128,15 +131,18 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
              redirect_to = _this.find('[name="redirect_to"]'),
              _container = _this.parent(),
              notice_area = _container.find('.woocommerce-notices-wrapper');
-            if(notice_area.length <1){
+           
+             if(notice_area.length <1){
                 _container.prepend('<div class="woocommerce-notices-wrapper"></div>');
                 notice_area = _container.find('.woocommerce-notices-wrapper');
             }
+          
             // process the form
             $.ajax({
                 type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
                 url         : _this.attr('action'), // the url where we want to POST
                 data        : formData, // our data object
+                crossDomain:true
             })
                 // using the done promise callback
                 .done(function(data) {
@@ -158,12 +164,14 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
             event.preventDefault();
         });
     }
+  
     // action Write a review
     var actionWriteReview = function(){
         // close popup thankyou review
         $('.close-popup').on('click',function(e){
             $('#formThankReview').removeClass('show');
         });
+      
         // select start
         $('.actionStar').on('click',function(e){
             var get_star = $(this).data('star');
@@ -173,6 +181,7 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
                 $('.rating a:nth-child('+i+')').addClass('active');
             }
         });
+      
         // hover star
         $( ".actionStar" ).hover(
           function() {
@@ -185,6 +194,7 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
                 
           }
         );
+      
         // ajax check login => return popup
         $('.action_writeReview').on('click',function(e){
             e.preventDefault();
@@ -195,10 +205,12 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
                 'data': idreview,
                 'security' : $('head meta[name="security_ajax_refer"]').attr('content'),
             };
+          
             $.ajax({ // you can also use $.post here
                 url : bbs_theme_ajaxurl, // AJAX handler
                 data : data,
                 type : 'POST',
+                crossDomain:true,
                 beforeSend : function ( xhr ) {
                     // button.text('Loading...'); // change the button text, you can also add a preloader image
                 },
@@ -233,6 +245,7 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
         var param_action_login = {
                action: 'bbs_browserprivacy_norecaptcha'
         };
+      
         jQuery.post(bbs_theme_ajaxurl, param_action_login , function(data){ 
           if(data._isok) {
             // Nhận key ajax refer
@@ -283,10 +296,12 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
                 'page': this_current_page,
                 'security': $('head meta[name="security_ajax_refer"]').attr('content'),
             };
+          
             $.ajax({
                 url: bbs_theme_ajaxurl ,
                 data: data,
                 type: 'POST',
+                crossDomain:true,
                 beforeSend: function(xhr) {
                     button.text('Loading...');
                     button.addClass('_loading');
@@ -321,11 +336,13 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
                 'data': idpost,
                 'security' : $('head meta[name="security_ajax_refer"]').attr('content'),
             };
+         
             $.ajax({ // you can also use $.post here
                 url : bbs_theme_ajaxurl, // AJAX handler
                 data : data,
                 type : 'POST',
                 dataType: "html",
+                crossDomain:true,
                 beforeSend : function ( xhr ) {
                     // button.text('Loading...'); // change the button text, you can also add a preloader image
                 },
@@ -375,7 +392,5 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
         bindLoad();
         blogLoader();
         actionAddToCart();
-        // stickyEl('.header',1950);
-        // stickyEl('.cat-sidebar');
     });
 })(jQuery);
