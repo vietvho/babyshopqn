@@ -25,10 +25,10 @@ if (!is_array($offer_list)) return;
                         $_alt = get_post_meta($_thumbnail_id, '_wp_attachment_image_alt', true) ;
                         $_alt = !empty(trim($_alt)) ? $_alt : $title;
                         // $_alt = empty(trim($_alt)) ? $loop->post->post_title : get_post_meta($_thumbnail_id, '_wp_attachment_image_alt', true);
-                        echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. $_url . '" alt="Placeholder" data-alt="' . $_alt . '" class="lazy-img card-img-top" />
+                        echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. $_url . '" alt="Placeholder" data-alt="' . $_alt . '" class="lazy-img card-img-top" />
                         '; 
                    } else 
-                        echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. woocommerce_placeholder_img_src() . '" alt="product placeholder Image" class="lazy-img card-img-top" width="65px" height="115px" />
+                        echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. woocommerce_placeholder_img_src() . '" alt="product placeholder Image" class="lazy-img card-img-top" width="65px" height="115px" />
                         '; 
                         ?>
                 </div>

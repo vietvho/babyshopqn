@@ -85,9 +85,9 @@
 						if($_option_modal_image) {
 		               		$_url = wp_get_attachment_image_url($_option_modal_image, 'full');
 							$_alt = get_post_meta($_option_modal_image, '_wp_attachment_image_alt', true);
-		                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. $_url . '" alt="Placeholder" data-alt="' . $_alt . '" class="lazy-img-v2" />'; 
+		                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. $_url . '" alt="Placeholder" data-alt="' . $_alt . '" class="lazy-img-v2" />'; 
 		               } else 
-		                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. SITE_URX . '/wp-content/uploads/2021/01/my_pham.jpg' . '" alt="product placeholder Image" class="lazy-img-v2" />'; 
+		                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. SITE_URX . '/wp-content/uploads/2021/01/my_pham.jpg' . '" alt="product placeholder Image" class="lazy-img-v2" />'; 
 			            ?>
 					</div>
 				</div>

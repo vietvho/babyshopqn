@@ -3,7 +3,7 @@ function wp_login_form_header( $args = array(), $redirect = null ) {
     $defaults = array(
         'echo'           => false,
         // Default 'redirect' value takes the user back to the request URI.
-        'redirect'       => isset($redirect) ? $redirect : ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+        'redirect'       => isset($redirect) ? $redirect : ( is_ssl() ? 'https://' : 'https://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
         'form_id'        => 'loginform',
         'label_username' => __( 'Username or Email Address' ),
         'label_password' => __( 'Password' ),

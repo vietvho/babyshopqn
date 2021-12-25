@@ -223,14 +223,14 @@
             @extend %extarticle_2;
             bottom: 7px;
             left: 10px;
-            background-image: url("data:image/svg+xml,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 16 16%22%3E%3Cpath fill=%22%23444444%22 d=%22M7 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z%22%3E%3C/path%3E%3Cpath fill=%22%23444444%22 d=%22M16 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z%22%3E%3C/path%3E%3C/svg%3E")
+            background-image: url("data:image/svg+xml,%3Csvg version=%221.1%22 xmlns=%22https://www.w3.org/2000/svg%22 xmlns:xlink=%22https://www.w3.org/1999/xlink%22 viewBox=%220 0 16 16%22%3E%3Cpath fill=%22%23444444%22 d=%22M7 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z%22%3E%3C/path%3E%3Cpath fill=%22%23444444%22 d=%22M16 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z%22%3E%3C/path%3E%3C/svg%3E")
         }
 
         &:after {
             @extend %extarticle_2;
             top: 5px;
             right: 15px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 version=%221.1%22 viewBox=%220 0 16 16%22%3E%3Cpath fill=%22%23444444%22 d=%22M9 9v-7h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-0.6-1.4c0 0 2-0.3 2.4-1.9 0.4-1.2-0.4-2.2-0.4-2.2h-3.9z%22/%3E%3Cpath fill=%22%23444444%22 d=%22M0 9v-7h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-0.6-1.4c0 0 2-0.3 2.4-1.9 0.4-1.2-0.4-2.2-0.4-2.2h-3.9z%22/%3E%3C/svg%3E")
+            background-image: url("data:image/svg+xml,%3Csvg xmlns=%22https://www.w3.org/2000/svg%22 xmlns:xlink=%22https://www.w3.org/1999/xlink%22 version=%221.1%22 viewBox=%220 0 16 16%22%3E%3Cpath fill=%22%23444444%22 d=%22M9 9v-7h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-0.6-1.4c0 0 2-0.3 2.4-1.9 0.4-1.2-0.4-2.2-0.4-2.2h-3.9z%22/%3E%3Cpath fill=%22%23444444%22 d=%22M0 9v-7h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-0.6-1.4c0 0 2-0.3 2.4-1.9 0.4-1.2-0.4-2.2-0.4-2.2h-3.9z%22/%3E%3C/svg%3E")
         }
 
         p {
@@ -282,7 +282,7 @@
         border-radius: 3px;
         background: #fff;
         margin: 1em 0;
-        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f9f9f9' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='https://www.w3.org/2000/svg'%3E%3Cg fill='%23f9f9f9' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
         border: 1px solid #ddd;
         box-shadow: -5px -5px 0 #e0e0e0;
 
@@ -334,7 +334,7 @@
             margin-bottom: 20px;
             padding: 10px;
             background-color: #fff;
-            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f9f9f9' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E")
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='https://www.w3.org/2000/svg'%3E%3Cg fill='%23f9f9f9' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E")
           
             strong {
                 color: #7e0bbf;

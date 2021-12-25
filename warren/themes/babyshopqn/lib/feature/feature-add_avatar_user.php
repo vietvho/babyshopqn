@@ -2,7 +2,7 @@
 /**
  * Use ACF image field as avatar
  * @author Mike Hemberger
- * @link http://thestizmedia.com/acf-pro-simple-local-avatars/
+ * @link https://thestizmedia.com/acf-pro-simple-local-avatars/
  * @uses ACF Pro image field (tested return value set as Array )
  */
 

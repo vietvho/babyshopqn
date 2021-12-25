@@ -189,13 +189,13 @@ if  ($loop->have_posts() ):
 								$_srcset = wp_get_attachment_image_srcset( $_thumbnail_id, 'full' );
 
 								// $_alt = empty(trim($_alt)) ? $loop->post->post_title : get_post_meta($_thumbnail_id, '_wp_attachment_image_alt', true);
-			                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. $_url . '" srcset="'. $_srcset . '" alt="Placeholder" data-alt="' . $_alt . '" class="swiper-lazy card-img-top" />
+			                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. $_url . '" srcset="'. $_srcset . '" alt="Placeholder" data-alt="' . $_alt . '" class="swiper-lazy card-img-top" />
 			                		<span class="swiper-lazy-preloader"></span>
 			                	'; 
 
 
 			               } else 
-			                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. woocommerce_placeholder_img_src() . '" alt="product placeholder Image" class="swiper-lazy card-img-top" width="65px" height="115px" />
+			                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. woocommerce_placeholder_img_src() . '" alt="product placeholder Image" class="swiper-lazy card-img-top" width="65px" height="115px" />
 			                		<span class="swiper-lazy-preloader"></span>
 			                	'; 
 
