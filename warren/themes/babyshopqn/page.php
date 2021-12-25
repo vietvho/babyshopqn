@@ -1,17 +1,17 @@
-<?php 
-get_header(); 
+<?php
+get_header();
 ?>
-	
+
 <?php
 if ( have_rows( 'regions' ) ) {
 
 	while ( have_rows( 'regions' ) ) {
-        the_row();
-        $row = get_row(true);
-        $row_index = get_row_index();
-        if(file_exists(THEME_CHILD_DIR . '/regions/' . get_row_layout() . '.php')) {
-        	include THEME_CHILD_DIR . '/regions/' . get_row_layout() . '.php';
-        }
+		the_row();
+		$row = get_row(true);
+		$row_index = get_row_index();
+		if(file_exists(THEME_CHILD_DIR . '/regions/' . get_row_layout() . '.php')) {
+			include THEME_CHILD_DIR . '/regions/' . get_row_layout() . '.php';
+		}
 	}
 
 } else { ?>
@@ -20,4 +20,4 @@ if ( have_rows( 'regions' ) ) {
 </main>
 <?php }  ?>
 <?php
-get_footer(); 
+get_footer();

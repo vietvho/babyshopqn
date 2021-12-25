@@ -1,10 +1,36 @@
 export default class LazyLoadW {
-  constructor(){
-    var lazyImages = '';
-    var inAdvance = 300;
-    var isActionLoad = false;
+  constructor(){   
     this.lazyLoad(true);
     this.bindEvent();
+    this.renderSVG();
+  }
+
+  renderSVG() {
+    // Select the current image.
+    let images = document.querySelectorAll('img[src*=".svg"]');
+    for(let i=0; i<images.length ; i++) {
+    // Create a new dom parser to turn the SVG string into an element.
+    const parser = new DOMParser();
+
+    // Fetch the file from the server.
+    fetch(images[i].getAttribute("src"))
+      .then(response => response.text())
+      .then(text => {
+
+        // Turn the raw text into a document with the svg element in it.
+        const parsed = parser.parseFromString(text, 'text/html');
+
+        // Select the <svg> element from that document.
+        const svg = parsed.querySelector('svg');
+
+        // If both the image and svg are found, replace the image with the svg.
+        if (images[i] !== null && svg !== null) {
+        svg.setAttribute("class",images[i].getAttribute("class"));
+          images[i].replaceWith(svg);
+        }
+
+      });
+    }
   }
 
   lazyLoad(is_manual) {
@@ -69,14 +95,7 @@ export default class LazyLoadW {
 
             lazyImages = lazyImages.filter(function(image) {
               return image !== lazyImage;
-            });
-
-            // No need to use the event listeners if there are no images to be lazy loaded
-            // if (lazyImages.length === 0) {
-            //   document.removeEventListener("scroll", lazyLoadV2);
-            //   window.removeEventListener("resize", lazyLoadV2);
-            //   window.removeEventListener("orientationchange", lazyLoadV2);
-            // }
+            });          
           }
         });
 

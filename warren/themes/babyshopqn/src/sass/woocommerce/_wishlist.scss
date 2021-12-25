@@ -6,40 +6,49 @@
         border-bottom: 1px solid #ECECEC;
         position: relative;
     }
+   
     &__item-image {
         width: 135px;
         height: 135px;
         margin-right: 24px;
+     
         @include media-breakpoint-down(md) {
             width: 88px;
             height: 88px;
         }
+     
         img {
             width: 135px;
             height: 135px;
             object-fit: cover;
+          
             @include media-breakpoint-down(md) {
                 width: 88px;
                 height: 88px;
             }
         }
     }
+   
     &__item-content {
         font-size: 14px;
         line-height: 20px;
         position: relative;
         width: 80%;
+      
         h2 {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
+       
             @include media-breakpoint-down(md) {
                 padding-right: 190px;
             }
+         
             @include media-breakpoint-down(sm) {
                 padding-right: 0;
             }
         }
+    
         .amount {
             display: block;
             font-weight: 600;
@@ -48,6 +57,7 @@
             color: $color_primary;
             margin-top: 10px;            
         }
+     
         .btn {
             position: absolute;
             left: 0;
@@ -56,47 +66,58 @@
             background: transparent !important;
             border: 2px solid $color_secondary;
             color: $color_secondary !important;
+          
             &:hover {
                 background: $color_secondary !important;
                 border: 2px solid $color_secondary;
                 color: #fff !important;
             }
+          
             @include media-breakpoint-down(md) {
                 display: none;
             }
         }
     }
+  
     &__price {
         display: flex;
+      
         @include media-breakpoint-between(sm,md) {
             position: absolute;
             right: 0;
             top: 0;
             margin-top: 0;
+        
             .amount {
                 margin-top: 0;
             }
         }
+      
         del {
             margin-right: 10px;
+          
             .amount {
                 color: #888;
             }
         }
     }
+   
     .remove_from_wishlist {
         margin-left: auto;
+      
         @include media-breakpoint-between(sm,md) {
             position: absolute;
             bottom: 24px;
             left: 112px;
         }
+       
         > i {
             pointer-events: none;
         }
     }
    
 }
+
 .bbs-wishlist {
     .section-title {
         a{
@@ -104,6 +125,7 @@
             color: inherit;
             float: right;
             margin-top: 8px;
+          
             &:hover{
                 color: $color_primary;
             }

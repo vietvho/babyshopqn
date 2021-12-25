@@ -3,6 +3,7 @@
     %extarticle_1 {
         margin-bottom: 10px;
         font-weight: 900;
+
         &:not(:first-of-type) {
             margin-top: 20px;
         }
@@ -44,6 +45,7 @@
     word-break: break-word;
     font-size: 14px;
     line-height: 1.4;
+
     strong {
                         
         background: #fddddd;
@@ -52,56 +54,74 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffeb3b', endColorstr='#fddddd',GradientType=0 )
 
     }
+
     img {
         height: auto;
         margin-bottom: 14px;
         max-width: 100%;
+
         &.alignleft {
             float: left;
             margin-right: 10px;
             max-width: 40%;
         }
+
         &.alignright {
             float: right;
             margin-left: 10px;
             max-width: 40%;
         }
+
         &.aligncenter {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
+
         &.hasboxshadow {
             box-shadow: 0 34.5366px 69.0732px rgba(0,0,0,.3);
         }
     }
+
     ol {
         padding-left: 0;
         padding: 0;
+        
         @extend %extarticle_3;
+
         li {
             @extend %extarticle_4;
+
             list-style-type: decimal;
             margin-left: 30px;
             padding-left: 10px;
+
             > p {
                 @extend %extarticle_5;
             }
+
             &:not(:last-child) {
                 margin-bottom: 15px;
             }
         }
     }
+
     ul {
         padding-left: 0;
         padding: 0;
+
         &:not(.toc_list) {
+
             @extend %extarticle_3;
+
             ul {
                 margin: 10px 0;
             }
+
             li {
+
                 @extend %extarticle_4;
+
                 &:before {
                     content: "⦿";
                     font-weight: 900;
@@ -112,9 +132,11 @@
                     margin-left: -20px;
                     top: -1px;
                 }
+
                 > p {
                     @extend %extarticle_5;
                 }
+
                 &:not(:last-child) {
                     margin-bottom: 15px;
                 }
@@ -130,26 +152,32 @@
     h6 {
         @extend %extarticle_1;   
     }
+
     h1 {
 
         font-size: 190%;
     }
+
     h2 {
 
         font-size: 170%;
     }
+
     h3 {
 
         font-size: 130%;
     }
+
     h4 {
 
         font-size: 120%;
     }
+
     h5 {
 
         font-size: 110%;
     }
+
     h6 {
 
         font-size: 100%;
@@ -157,10 +185,12 @@
 
     p {
         line-height: 1.8;
+
         &:not(:last-of-type) {
             margin-bottom: 18px;
         }
     }
+
     a {
         line-height: 1.8;
         padding-top: 2px;
@@ -168,13 +198,16 @@
         font-weight: 400;
         color: #0c152a;
         border-bottom: 1px solid #faa61a;
+
         &:hover {
             border-bottom: 1px solid;
         }
     }
+
     li {
         line-height: 1.8;
     }
+
     blockquote {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -185,24 +218,28 @@
         color: #4e4e4e;
         background: #fff3e1;
         z-index: 1;
+
         &:before {
             @extend %extarticle_2;
             bottom: 7px;
             left: 10px;
             background-image: url("data:image/svg+xml,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 16 16%22%3E%3Cpath fill=%22%23444444%22 d=%22M7 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z%22%3E%3C/path%3E%3Cpath fill=%22%23444444%22 d=%22M16 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z%22%3E%3C/path%3E%3C/svg%3E")
         }
+
         &:after {
             @extend %extarticle_2;
             top: 5px;
             right: 15px;
             background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 version=%221.1%22 viewBox=%220 0 16 16%22%3E%3Cpath fill=%22%23444444%22 d=%22M9 9v-7h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-0.6-1.4c0 0 2-0.3 2.4-1.9 0.4-1.2-0.4-2.2-0.4-2.2h-3.9z%22/%3E%3Cpath fill=%22%23444444%22 d=%22M0 9v-7h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-0.6-1.4c0 0 2-0.3 2.4-1.9 0.4-1.2-0.4-2.2-0.4-2.2h-3.9z%22/%3E%3C/svg%3E")
         }
+
         p {
             position: relative;
             padding: 0;
             z-index: 3;
             line-height: 1.7;
         }
+
         cite {
             position: relative;
             z-index: 3;
@@ -211,6 +248,7 @@
             font-size: .9em;
             margin-top: 10px;
         }
+
         a {
             display: inline-block;
             padding: 5px 5px 8px;
@@ -220,9 +258,11 @@
             background: rgba(255,255,255,.5);
             margin-top: 10px;
             border-radius: 5px;
+
             &:hover {
                 color: #fff;
                 background: #0064aa;
+
                 &:before {
                     color: #fff;
                     background: #0064aa;
@@ -230,12 +270,14 @@
             }
         }
     }
+
     aside {
         padding: 10px;
         background: #eee;
         border: 1px dotted #ccc;
         margin-bottom: 10px;
     }
+
     details {
         border-radius: 3px;
         background: #fff;
@@ -243,12 +285,15 @@
         background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f9f9f9' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
         border: 1px solid #ddd;
         box-shadow: -5px -5px 0 #e0e0e0;
+
         p {
             padding: 10px;
         }
+
         div {
             padding: 10px;
         }
+
         summary {
             background: #ff8337;
             color: #fff;
@@ -258,10 +303,12 @@
             cursor: pointer;
         }
     }
+
     dl {
         @extend %extarticle_3;
         border: none;
         overflow: inherit;
+
         dt {
             padding: 10px 0 10px 15px;
             font-weight: 600;
@@ -275,6 +322,7 @@
             z-index: 1;
             position: relative;
         }
+
         dd {
             font-size: 14px;
             font-weight: 400;
@@ -287,11 +335,13 @@
             padding: 10px;
             background-color: #fff;
             background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f9f9f9' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E")
+          
             strong {
                 color: #7e0bbf;
             }
         }
     }
+
     table {
         border-spacing: 1px;
         border-collapse: collapse;
@@ -305,59 +355,76 @@
         margin-top: 16px;
         margin-bottom: 20px;
         border: 1px solid #efefef;
+       
         * {
             position: relative;
         }
+
         td {
             padding: 16px;
             text-align: left;
+           
             &.l {
                 text-align: right;
             }
+            
             &.c {
                 text-align: center;
             }
+           
             &.r {
                 text-align: center;
             }
         }
+
         th {
             padding-left: 8px;
             text-align: left;
+           
             &.l {
                 text-align: right;
             }
+           
             &.c {
                 text-align: center;
             }
+           
             &.r {
                 text-align: center;
             }
         }
+        
         thead tr {
             background: #36304a;
             color: #fff;
+        
             th {
                 padding: 20px 10px;
             }
         }
+        
         tbody tr {
             height: 50px;
+        
             &:last-child {
                 border: 0;
             }
         }
     }
+    
     details[open] summary {
         color: #fff;
     }
+    
     tbody tr {
         font-size: 15px;
         line-height: 1.2;
         font-weight: unset;
+    
         &:nth-child(even) {
             background-color: #f5f5f5;
         }
+    
         &:hover {
             color: #555;
             background-color: #f5f5f5;

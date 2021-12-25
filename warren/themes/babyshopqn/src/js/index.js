@@ -1,7 +1,3 @@
-// @import './src/js/lib/cookie.js' 
-// @import './src/js/lib/swiper-bundle.min.js' 
-// @import './src/js/lib/smooth_style.js' 
-// @import './src/js/lib/images.js' 
 import loadSVG from "./lib/svg";
 import HeroSlider from './controllers/HeroSliders.js';
 import CarouselProductList from './controllers/ProductCarousel';
@@ -47,38 +43,6 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
         });
     }
     
-    var testAjax = function(){
-        $('.header--top_login').on('click',function(e){
-            // console.log('XXX');
-            e.preventDefault();
-            var post__not_in = 'Kcmhito';
-            var data = {
-                'action': 'testajax',
-                'data': post__not_in,
-                'security' : $('head meta[name="security_ajax_refer"]').attr('content'),
-            };
-
-            $.ajax({ // you can also use $.post here
-                url : bbs_theme_ajaxurl, // AJAX handler
-                data : data,
-                type : 'POST',
-                beforeSend : function ( xhr ) {
-                    // button.text('Loading...'); // change the button text, you can also add a preloader image
-                },
-                success : function( data ){
-                    if( data ) { 
-                        $('#' + data_tab).html(data); // insert new posts
-
-                        // Xóa đi class not-ready sau khi load dc dữ liệu thành công
-                        button.removeClass('not-ready')
-                        // you can also fire the "post-load" event here if you use a plugin that requires it
-                        // $( document.body ).trigger( 'post-load' );
-                    }
-                }
-            });
-        });
-    }
-
     var activeNiceSelect = function(){
         if ($.fn.niceSelect){
             $('.woocommerce-ordering select').niceSelect();
@@ -250,27 +214,6 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
         });
     }
 
-    var stickyEl = function (el,screensize){
-        if (!screensize){
-            screensize = 769
-        }
-        if (window.screen.width < screensize){
-            // When the user scrolls the page, execute myFunction
-            window.onscroll = function() {
-                // Get the header
-                var header = document.querySelector("header"), elDom = document.querySelector(el);
-                // Get the offset position of the navbar
-                var sticky = header.offsetTop;
-                if (window.pageYOffset > sticky) {
-                    elDom.classList.add("sticky");
-                } else {
-                    elDom.classList.remove("sticky");
-                }
-            }
-        }
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    }
-
     var modalTrigger = function(){
         $('.c-btn--show-modal').on('click',function(){
             var _this = $(this),_target = _this.data('target');
@@ -318,7 +261,6 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
 
         // Detech Event Ajax
         jQuery(document).ajaxStart(function(e){
-            console.log(e)
           jQuery("body").addClass('ajaxLoading')
         });
 
@@ -410,7 +352,7 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
     // Dom Ready
     $(function($) {
         initSetup();
-        loadSVG();
+        // loadSVG();
         new HeroSlider;
         new CarouselProductList;
         editToggle();

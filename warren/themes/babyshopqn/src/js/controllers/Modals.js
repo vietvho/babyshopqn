@@ -24,7 +24,6 @@ export default class Modal {
                 var _id_modal = jQuery(this).closest(elmstr).data('idmodal');
                 var _type = jQuery(this).closest(elmstr).data('usercookie');
                 if(_type) {
-                    // setCookie()
                     Wcookies.setCookie(_id_modal, 'close', _type);
                 }
             });

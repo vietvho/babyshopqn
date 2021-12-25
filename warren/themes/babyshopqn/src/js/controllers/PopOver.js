@@ -30,7 +30,7 @@ export default class PopOver{
                 if(str_menu !== _classes) {
 
                     // Popover cũ ẩn đi
-                    jQuery(elmstr + '[data-dlgid="' + str_menu + '"]').fadeOut().addClass('is_hide').removeClass('is_show');
+                    jQuery(elmstr + '[data-dlgid="' + str_menu + '"]').fadeOut().addClass('is-hide').removeClass('is-show');
 
 
                     // Menu thay biến tạm mới
@@ -39,7 +39,7 @@ export default class PopOver{
                 }
 
                 // show menu mới lên
-                jQuery(elmstr + '[data-dlgid="' + str_menu + '"]').fadeIn().addClass("is_show").removeClass('is_hide');
+                jQuery(elmstr + '[data-dlgid="' + str_menu + '"]').fadeIn().addClass("is-show").removeClass('is-hide');
 
                 // Set top
                 jQuery(elmstr + '[data-dlgid="' + str_menu + '"]').css('top', this_offset_postop);
@@ -101,7 +101,7 @@ export default class PopOver{
                 var _this = jQuery(this);
                 var _classes = _this.data('popover');
                 _time_hide = setTimeout(function(){
-                    jQuery(elmstr + '[data-dlgid="' + _classes + '"]').fadeOut().addClass('is_hide').removeClass('is_show');
+                    jQuery(elmstr + '[data-dlgid="' + _classes + '"]').fadeOut().addClass('is-hide').removeClass('is-show');
                     hideHtmlPopover();
                 }, 2000);
 
@@ -112,9 +112,9 @@ export default class PopOver{
                 var _classes = _this.data('popover');
                 clearInterval(_time_hide);
                 // console.log(jQuery(elmstr + '[data-dlgid="' + _classes + '"]').attr('class'));
-                if(jQuery(elmstr + '[data-dlgid="' + _classes + '"]').hasClass('is_show')) {
+                if(jQuery(elmstr + '[data-dlgid="' + _classes + '"]').hasClass('is-show')) {
                     // Show
-                    jQuery(elmstr + '[data-dlgid="' + _classes + '"]').removeClass('is_show').addClass('is_hide')
+                    jQuery(elmstr + '[data-dlgid="' + _classes + '"]').removeClass('is-show').addClass('is-hide')
                     hideHtmlPopover();
                 } 
                 else {
@@ -141,7 +141,7 @@ export default class PopOver{
                 if(_is_hide) return false;
 
 
-                jQuery(this).fadeOut().addClass('is_hide').removeClass('is_show');
+                jQuery(this).fadeOut().addClass('is-hide').removeClass('is-show');
                 hideHtmlPopover();
             })
         ;
@@ -149,7 +149,7 @@ export default class PopOver{
 
 
         jQuery(elmstr + '__close').click(function(e){
-            jQuery(this).closest(elmstr).addClass('is_hide').removeClass('is_show');
+            jQuery(this).closest(elmstr).addClass('is-hide').removeClass('is-show');
             hideHtmlPopover();
             // setCookie()
         });
@@ -168,7 +168,7 @@ export default class PopOver{
                     // if the target of the click isn't the container nor a descendant of the container
                     if (!container.is(e.target) && container.has(e.target).length === 0) {
                         
-                        container.fadeOut().addClass('is_hide').removeClass('is_show');
+                        container.fadeOut().addClass('is-hide').removeClass('is-show');
                         hideHtmlPopover();
                     }
                 }

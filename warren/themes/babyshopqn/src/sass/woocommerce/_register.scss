@@ -19,25 +19,31 @@
         }
     }
 }
+
 .woocommerce-form-register {
     padding: 16px;
+   
     .form-row {
         &.first_name {
             width: 48%;
             float: left;
             margin-right: 3px;
         }
+      
         &.last_name {
             width: 49%;
             float: right;
             margin-left: 3px;
         }
+      
         &:nth-child(3) {
             clear: both;
         }
+      
         input {
             margin-bottom: 4px;
         }
+     
         input[type=password],
         input[type=date] {
             box-shadow: 0 0 0;
@@ -48,31 +54,37 @@
             box-sizing: border-box;
         }
     }
+   
     p {
         &:nth-child(7) {
             border: none;
         }
+     
         &:nth-child(8) {
             font-size: 12px;
             line-height: 1.3;
             margin-bottom: 7px;
             display: block;
         }
+      
         &:nth-child(9) {
             font-size: 12px;
             line-height: 1.3;
             display: block;
         }
     }
+  
     .form-button-container {
         margin-bottom: 30px;
     }
+  
     .form-login_desc--register {
         margin-bottom: 0;
         padding: 16px 16px 0 16px;
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
+        
         br {
             display: none;
         }
@@ -81,6 +93,7 @@
 
 .c-modal__register {
     max-width: 416px;
+   
     @include media-breakpoint-down(md){
         max-width: unset;
     }

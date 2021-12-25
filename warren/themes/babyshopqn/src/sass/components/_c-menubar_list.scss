@@ -6,6 +6,7 @@
     align-items: center;
     max-height: 70vh;
     overflow: auto;
+  
     a {
         background: #FFFFFF;
         /* Neutral / Light */
@@ -24,10 +25,12 @@
         align-items: center;
         margin-bottom: 16px;
     }
+  
     a span {
         user-select: none;
         pointer-events: none;
     }
+  
     a img,
     a svg {
         position: absolute;
@@ -43,10 +46,12 @@ html.dlg_has_showmn_menuspbar {
         .c-popover__title {
             text-align: center
         }
+  
         padding-bottom: 60px;
         overflow: auto;
         max-height: 100vh;
     }
+  
     .c-menubar {
         z-index: 12;
         box-shadow: 0 0 10px #ededed;

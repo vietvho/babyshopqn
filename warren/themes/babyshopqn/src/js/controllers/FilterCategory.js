@@ -9,7 +9,7 @@ export default class FilterCategory {
 
     init() {
         jQuery('.brand__filter, ._cancel_filter, ._close_filterpanel').click(function(){
-            jQuery('.c-popover--filter').removeClass('is_show').addClass('is_hide');
+            jQuery('.c-popover--filter').removeClass('is-show').addClass('is-hide');
 
         });
 
@@ -284,7 +284,7 @@ export default class FilterCategory {
                 alert('Vui lòng nhập đầy đủ thông tin!')
                 return;
             } else {
-                jQuery('.c-popover--filter').removeClass('is_show').addClass('is_hide');
+                jQuery('.c-popover--filter').removeClass('is-show').addClass('is-hide');
                 document.parentElement.classList.remove('dlg_has_showmn');
             }
 

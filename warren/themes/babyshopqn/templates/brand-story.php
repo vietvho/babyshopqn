@@ -38,7 +38,7 @@ if ( have_rows( 'banner' ) ) : ?>
 </div> -->
 <?php if ( have_rows( 'section' ) ) : ?>
 	<?php while ( have_rows( 'section' ) ) : the_row(); ?>
-		<?php if ( get_sub_field( 'is_show' ) != 1 ) continue;  ?>
+		<?php if ( get_sub_field( 'is-show' ) != 1 ) continue;  ?>
 		<div class="row section sec1" >
 		   <div class="col-md-6 story center" style="order: 2">
 				<div class="_inner">

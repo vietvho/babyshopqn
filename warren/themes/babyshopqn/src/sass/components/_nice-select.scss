@@ -38,12 +38,15 @@ $arrow_color: $gray !default;
   width: auto;
   line-height: 30px;
   font-weight: 600;
+ 
   &:hover {
     border-color: darken($gray_light, 5%);
   }
+ 
   &:active, &:focus {
     border-color: $primary_light;
   }
+ 
   // Arrow
   &:after { 
     content: '';
@@ -63,19 +66,23 @@ $arrow_color: $gray !default;
   
   &.open {
     @extend :active;
+  
     &:after {
       transform: rotate(-180deg);
     }
+  
     .list {
       opacity: 1;
       pointer-events: auto;
       transform: scale(1) translateY(0);
     }
   }
+ 
   &.disabled {
     border-color: lighten($gray_light, 2%);
     color: $gray;
     pointer-events: none;
+ 
     &:after { 
       border-color: lighten($arrow_color, 20%);
     }
@@ -84,26 +91,32 @@ $arrow_color: $gray !default;
   // Modifiers
   &.wide {
     width: 100%;
+ 
     .list {
       left: 0 !important;
       right: 0 !important;
     }
   }
+ 
   &.right {
     float: right;
+ 
     .list {
       left: auto;
       right: 0;
     }
   }
+ 
   &.small {
     font-size: $font_size_small;
     height: $input_height_small;
     line-height: $input_height_small - 2;
+ 
     &:after { 
       height: 4px;
       width: 4px;
     }
+ 
     .option {
       line-height: $input_height_small - 2;
       min-height: $input_height_small - 2;
@@ -127,10 +140,12 @@ $arrow_color: $gray !default;
     transform: scale(.75) translateY(- $input_height / 2);
     transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
     z-index: 9;
+ 
     &:hover .option:not(:hover) {
       background-color: transparent !important;
     }
   }
+ 
   .option {
     cursor: pointer;
     font-weight: 400;
@@ -142,12 +157,15 @@ $arrow_color: $gray !default;
     padding-right: $dropdown_padding + 11;
     text-align: left;
     transition: all 0.2s;
+ 
     &:hover, &.focus, &.selected.focus { 
       background-color: $gray_lighter;
     }
+ 
     &.selected { 
       font-weight: bold;
     }
+ 
     &.disabled {
       background-color: transparent;
       color: $gray;
@@ -161,7 +179,9 @@ $arrow_color: $gray !default;
   .list {
     display: none;
   }
+ 
   &.open {
+ 
     .list {
       display: block;
     }

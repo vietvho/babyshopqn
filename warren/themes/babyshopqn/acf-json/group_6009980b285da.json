@@ -65,7 +65,7 @@
                         {
                             "key": "field_600b8a33db1d8",
                             "label": "Show submenu?",
-                            "name": "is_show_submenu",
+                            "name": "is-show_submenu",
                             "type": "true_false",
                             "instructions": "",
                             "required": 0,

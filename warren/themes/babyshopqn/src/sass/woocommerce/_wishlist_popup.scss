@@ -4,58 +4,71 @@
             display: none;
         }
     }
+   
     &__title {
         font-weight: 600;
         font-size: 18px;
         line-height: 24px;
     }
+  
     .wishlist-list {
         &__item {
             padding-top: 0;
             padding-bottom: 16px;
             border-bottom: none;
+          
             &:last-child {
                 padding-bottom: 0;
             }
+           
             h2 a {
                 color: inherit;
+                
                 &:hover {
                     color: $color_primary;
                 }
             }
         }
+       
         &__item-image {
             width: 88px;
             height: 88px;
+           
             img {
                 width: 88px;
                 height: 88px;
                 object-fit: cover;
             }
         }
+      
         &__item-content {
             h2 {
                 font-size: 12px;
                 line-height: 16px;
             }
+          
             p {
                 font-size: 12px;
                 line-height: 16px;                
             }
+           
             .btn {
                 &.add_to_cart {
                     display: none;
                 }
             }
+          
             .amount {
                 font-size: 12px;
                 line-height: 16px;
             }
         }
+     
         .remove_from_wishlist {
             font-size: 12px;
         }
     }
+   
     .wishlist {
         &--no-items {
             p {
