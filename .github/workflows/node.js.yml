@@ -31,6 +31,7 @@ jobs:
       working-directory: /home/warren/babyshopqn
     - run: git checkout main
     - run: npm install yarn
+    - run: yarn upgrade
     - run: yarn install
     - run: yarn build   
     - run: echo '<? define( "DB_NAME", "${{ secrets.DB_NAME }}" );define( "DB_USER", "${{ secrets.DB_USER }}" );define( "DB_PASSWORD", "${{ secrets.DB_PASSWORD }}" ); ?>' > _DBconfig.php
