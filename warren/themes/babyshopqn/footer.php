@@ -39,16 +39,20 @@
 
 					<li>
 						<p><?= __('Theo dõi chúng tôi trên', 'bbs') ?></p>
-						<div class="list-social">
-							<?php if(get_field('info_facebook_social', 'option')): ?>
-							<a href="<?= get_field('info_facebook_social', 'option') ?>"><img src="<?= WP_CONTENT_URL?>/uploads/2021/01/facebook-1.svg" alt="Facebook"></a>
-							<?php endif; ?>
-							<?php if(get_field('info_instagram_social_link', 'option')): ?>
-							<a href="<?= get_field('info_instagram_social_link', 'option') ?>"><img src="<?= WP_CONTENT_URL?>/uploads/2021/01/instagram-1.svg" alt="instagram"></a>
-							<?php endif; ?>
-							<?php if(get_field('info_tiktok_social_link', 'option')): ?>
-							<a href="<?= get_field('info_tiktok_social_link', 'option') ?>"><img src="<?= WP_CONTENT_URL?>/uploads/2021/01/tiktok.svg" alt="tiktok"></a>
-							<?php endif; ?>
+						<div class="c-footer__list-social list-social">
+							<?php if ($_info_social_url = get_field('info_facebook_social', 'option')): ?>
+                                <a href="<?= $_info_social_url ?>" ><?php bbs_render_image(THEME_CHILD_URI."/assets/img/facebook.svg",["alt"=>"Facebook icon","class"=>"facebook"]);?>
+								<span class="string">Facebook BabyshopQN</span></a>
+                            <?php endif ?>
+
+                            <?php if ($_info_social_url  = get_field('info_instagram_social_link', 'option')): ?>
+                                <a href="<?= $_info_social_url ?>" ><?php bbs_render_image(THEME_CHILD_URI."/assets/img/instagram.svg",["alt"=>"Instagram icon","class"=>"instagram"]);?> <span class="string">Instagram BabyshopQN</span></a>
+                            <?php endif ?>
+
+                            <?php if ($_info_social_url  = get_field('info_tiktok_social_link', 'option')): ?>
+                                <a href="<?= $_info_social_url ?>" ><?php bbs_render_image(THEME_CHILD_URI."/assets/img/tiktok.svg",["alt"=>"Tiktok icon","class"=>"tiktok"]);?> <span class="string">Tiktok BabyshopQN</span></a>
+                            <?php endif ?>
+							
 						</div>
 					</li>
 				</ul>
@@ -127,7 +131,7 @@
 	<div class="c-modal__container">
 		<div class="content-view">
 			<?php
-				//wc_get_template_part( 'content', 'popup-product' );
+				wc_get_template_part( 'content', 'popup-product' );
 			?>
 		</div>
 		<span class="c-modal__close"></span>
@@ -145,6 +149,7 @@
 	</div>
 	<span class="c-popover__close"></span>
 </div>
+
 <div class="c-popover form-login" data-dlgid="mn_popover_2" >
 	<div class="c-popover__container">
 		<div class="c-popover__content">
@@ -153,6 +158,7 @@
 	</div>
 	<span class="c-popover__close"></span>
 </div>
+
 <div class="c-popover mini-cart-hover" data-dlgid="mn_popover_1" >
 	<div class="c-popover__container">
 		<div class="c-popover__content">
@@ -161,6 +167,7 @@
 	</div>
 	<span class="c-popover__close"></span>
 </div>
+
 <div class="c-popover c-popover__language is-dropdown" data-dlgid="mn_popover_language" >
 	<div class="c-popover__container">
 		<div class="c-popover__content">

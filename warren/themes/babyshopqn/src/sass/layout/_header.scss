@@ -74,17 +74,17 @@
            
             svg {
                
-                &:not(.facebook):not(.logo):not(.instagram) {
-                    path,circle {
-                        stroke: $color_primary;
-                    }
-                }
+                // &:not(.facebook):not(.logo):not(.instagram) {
+                //     path,circle {
+                //         stroke: $color_primary;
+                //     }
+                // }
                
-                &.facebook, &.logo,&.search-icon,&.instagram {
-                    path {
-                        fill: $color_primary;
-                    }
-                } 
+                // &.facebook, &.logo,&.search-icon,&.instagram {
+                //     path {
+                //         fill: $color_primary;
+                //     }
+                // } 
             }
         }
        

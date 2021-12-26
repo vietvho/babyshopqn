@@ -1,15 +1,12 @@
 export default class LazyLoadW {
   constructor(){
-    var lazyImages = '';
-    var inAdvance = 300;
-    var isActionLoad = false;
     this.lazyLoad();
     this.bindEvent();
   }
 
   lazyLoad(is_manual) {
-    console.log('trigger');
     let lazyImages = document.querySelectorAll('.lazy-img');
+    
     lazyImages.forEach(image => {
       if (window.getComputedStyle(image).display !== "none") {
           isActionLoad = false;
@@ -48,7 +45,6 @@ export default class LazyLoadW {
     window.addEventListener('resize', this.lazyLoadBg());
   }
 
-  // Image Lazyload
   // This goes in the JS file
   lazyLoadV2() {
     let lazyImages = [].slice.call(document.querySelectorAll(".lazy-img-v2");

@@ -82,8 +82,6 @@ $url = __DIR__ . '/warren';
 define('WP_CONTENT_DIR', $url);
 $protocol = $_SERVER['HTTFP_X_FORWARDED_PROTO'] === 'https' ? 'https' : 'http';
 define('WP_CONTENT_URL', $protocol . '://' . $_SERVER['HTTP_HOST'] . '/warren');
-//define('DB_DIR', $url.'/database');
-//define('DB_FILE', 'babyshopqn.db');
 
 /* That's all, stop editing! Happy publishing. */
 

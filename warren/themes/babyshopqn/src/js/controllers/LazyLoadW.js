@@ -2,7 +2,6 @@ export default class LazyLoadW {
   constructor(){   
     this.lazyLoad(true);
     this.bindEvent();
-    this.renderSVG();
   }
 
   renderSVG() {

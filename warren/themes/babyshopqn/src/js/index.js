@@ -369,7 +369,6 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
     // Dom Ready
     $(function($) {
         initSetup();
-        // loadSVG();
         new HeroSlider;
         new CarouselProductList;
         editToggle();
