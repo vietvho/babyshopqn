@@ -53,7 +53,7 @@ function bbs_loadmore_ajax_handler(){
  * Show cart contents / total Ajax
  */
 
-add_filter( 'woocommerce_add_to_cart_fragments', 'header_add_to_cart_fragment', 30, 1 );
+// add_filter( 'woocommerce_add_to_cart_fragments', 'header_add_to_cart_fragment', 30, 1 );
 function header_add_to_cart_fragment( $fragments ) {
     global $woocommerce;
     ob_start();

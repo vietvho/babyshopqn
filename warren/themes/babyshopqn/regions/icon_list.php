@@ -7,7 +7,7 @@ if (!is_array($icon_list)) return;
     <div class="d_row">
         <?php foreach ($icon_list as $list_item):?>
             <div class="icon-list--item d_col">
-                <img class="list-icon" alt="<?= $list_item['icon']['title'];?>" src="<?= $list_item['icon']['url'];?>" />
+                <?php bbs_render_image($list_item['icon']['url'],["alt"=> $list_item['icon']['title'], "class"=>"list-icon"]);?>
                 <span class="list-text"><?= $list_item['content'];?></span>
             </div>
         <?php endforeach;?>
