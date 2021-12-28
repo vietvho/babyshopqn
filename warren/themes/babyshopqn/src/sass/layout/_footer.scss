@@ -39,6 +39,14 @@
             max-width: 360px
         }
     }
+
+    &__list-social a {
+        display: flex;
+        
+        i {
+            margin-right: 10px;
+        }
+    }
    
     &__subscribe {
         flex: 0 0 31.4%;

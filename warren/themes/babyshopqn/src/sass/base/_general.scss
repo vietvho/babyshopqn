@@ -354,3 +354,8 @@ body {
 .o-overflow--visible {
     overflow: visible;
 }
+
+.svg svg {
+    width: 100%;
+    height: auto;
+}
