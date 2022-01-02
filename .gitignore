@@ -1,14 +1,14 @@
 # wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/mu-plugins/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+warren/advanced-cache.php
+warren/backup-db/
+warren/backups/
+warren/blogs.dir/
+warren/cache/
+warren/upgrade/
+warren/uploads/
+warren/mu-plugins/
+warren/wp-cache-config.php
+warren/plugins/hello.php
 _DBconfig.php
 
 # Logs and databases #
