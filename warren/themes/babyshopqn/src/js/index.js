@@ -9,6 +9,7 @@ import MegaMenu from "./controllers/MegaMenu";
 import LazyLoadW from "./controllers/LazyLoadW";
 import Modal from "./controllers/Modals";
 import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
+import AccountDashboard from "./controllers/AccountDashboard";
 
 (function($) {
 
@@ -21,28 +22,21 @@ import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
 
     // Dom Ready
     $(function($) {
-        initSetup();
         new HeroSlider;
         new CarouselProductList;
-        editToggle();
-        myAccountNav();
         new ProductSingleTabContent;
         new MegaMenu;
         new ProductSlider;
-        catSidebar();
-        activeNiceSelect();
         new PopOver;
-        actionHelpful();
-        ajaxLogin();
-        actionWriteReview();
+        // ajaxLogin();
         new FilterCategory;
-        modalTrigger();
         new OrderBy;
         new LazyLoadW;
         new Modal;
-        actionClickView();
-        bindLoad();
-        blogLoader();
-        actionAddToCart();
+        new AccountDashboard();
+        // actionClickView();
+        // bindLoad();
+        // blogLoader();
+        // actionAddToCart();
     });
 })(jQuery);

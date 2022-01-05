@@ -318,20 +318,6 @@ small {
 }
 
 body {
-    opacity: 0;
-
-    &:after {
-        content: "";
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: fixed;
-        z-index: 8;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity .3s ease-in-out;
-    }
 
     &.ajaxLoading:after {
         @extend %ext_bgloader;
