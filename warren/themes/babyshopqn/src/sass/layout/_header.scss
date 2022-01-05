@@ -23,12 +23,15 @@
         display: flex;
         align-items: center;
         min-height: 88px;
+
         a {
             color: $black;
+
             &:hover {
                 color: inherit;
             }
         }
+
         @include media-breakpoint-down(lg){
             min-height: 56px;
         }
@@ -383,6 +386,7 @@
             flex-wrap: nowrap;
             margin-right: 0;
             margin-left: auto;
+            align-items: center;
         }
     }
    
@@ -430,6 +434,10 @@
             .string {
                 font-size: 0;
                 user-select: none;   
+            }
+
+            &:hover {
+                color: $color_primary;
             }
         }
     }

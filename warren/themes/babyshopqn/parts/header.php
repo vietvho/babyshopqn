@@ -21,28 +21,13 @@ if(is_product()) {
                     $headerSocials = get_field('socials','options');
                     if (is_array($headerSocials)):
                         echo '<ul class="socials-bar">';
-                        ?>
-                            <?php if ($_info_social_url = get_field('info_facebook_social', 'option')): ?>
-                                <li><a href="<?= $_info_social_url ?>" >
-                                    <?php bbs_render_image(THEME_CHILD_URI."/assets/img/facebook.svg",["alt"=>"Facebook icon","class"=>"facebook svg"]);?>
-                                </a></li>
-                            <?php endif ?>
-
-                            <?php if ($_info_social_url  = get_field('info_instagram_social_link', 'option')): ?>
-                                <li><a href="<?= $_info_social_url ?>" >
-                                    <?php bbs_render_image(THEME_CHILD_URI."/assets/img/instagram.svg",["alt"=>"Instagram icon","class"=>"instagram svg"]);?>
-                                </a></li>
-                            <?php endif ?>
-
-                            <?php if ($_info_social_url  = get_field('info_tiktok_social_link', 'option')): ?>
-                                <li><a href="<?= $_info_social_url ?>" >
-                                <?php bbs_render_image(THEME_CHILD_URI."/assets/img/tiktok.svg",["alt"=>"Tiktok icon","class"=>"tiktok svg"]);?></a></li>
-                            <?php endif ?>
-                        <?php 
+                       
                         foreach ($headerSocials as $social) {
-                            $socialIcon = $social['social_icon'];
-                            printf('<li><a href="%4$s" target="_blank"><img class="%5$s" width="20px" height="auto" src="%1$s" alt="%2$s"/> %3$s</a></li>',$socialIcon['url'],$socialIcon['title'],$social['social_name'],$social['social_link'],$socialIcon['name']);
-                        }
+                            $socialIcon = $social['social_icon'];?>
+                            <li><a href="<?= $social['social_link'] ?>" >
+                                    <?php bbs_render_image($socialIcon['url'],["style"=>"width:20px;height: auto;","class"=>$socialIcon['name']." svg"]);?>
+                                </a></li>
+                        <?php }
                         echo '</ul>';
                     endif;
                     echo '<span class="vec-divider"></span>';
