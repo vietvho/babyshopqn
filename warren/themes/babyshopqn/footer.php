@@ -71,37 +71,6 @@
 
 <?php wp_footer(); ?>
 
-<div class="c-modal c-modal--promotion" data-usercookie="24h">
-	<?php 
-	$_option_modal_privacy_link = get_field('modal_privacy_link', 'option');
-	$_option_modal_terms_of_use = get_field('modal_terms_of_use', 'option');
-	$_option_modal_image        = get_field('modal_subscriber_image', 'option');
-
-	?>
-	<div class="c-modal__container">
-		<div class="c-modal__content">
-			<div class="c-modal--promotion__area">
-				<div class="row">
-					
-					<div class="col c-modal--promotion_image">
-						
-						<?php 
-						if($_option_modal_image) {
-		               		$_url = wp_get_attachment_image_url($_option_modal_image, 'full');
-							$_alt = get_post_meta($_option_modal_image, '_wp_attachment_image_alt', true);
-		                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. $_url . '" alt="Placeholder" data-alt="' . $_alt . '" class="lazy-img-v2" />'; 
-		               } else 
-		                	echo '<img src="data:image/svg+xml,%3Csvg%20xmlns=\'https://www.w3.org/2000/svg\'%20viewBox=\'0%200%200%200\'%3E%3C/svg%3E"  data-src="'. SITE_URX . '/wp-content/uploads/2021/01/my_pham.jpg' . '" alt="product placeholder Image" class="lazy-img-v2" />'; 
-			            ?>
-					</div>
-				</div>
-				<div class="c-modal--promotion__form"></div>
-			</div>
-		</div>
-		<span class="c-modal__close"></span>
-	</div>
-</div>
-
 <div id="formRegister" class="c-modal woocommerce" >
 	<div class="c-modal__container">
 		<div class="c-modal__title">

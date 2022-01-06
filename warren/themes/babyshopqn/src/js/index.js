@@ -10,6 +10,7 @@ import LazyLoadW from "./controllers/LazyLoadW";
 import Modal from "./controllers/Modals";
 import ProductSingleTabContent from "./controllers/ProductSingleTabContent";
 import AccountDashboard from "./controllers/AccountDashboard";
+import ProductAction from "./controllers/ProductAction";
 
 (function($) {
 
@@ -34,7 +35,7 @@ import AccountDashboard from "./controllers/AccountDashboard";
         new LazyLoadW;
         new Modal;
         new AccountDashboard();
-        // actionClickView();
+        new ProductAction();
         // bindLoad();
         // blogLoader();
         // actionAddToCart();

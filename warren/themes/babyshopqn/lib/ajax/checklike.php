@@ -117,8 +117,8 @@ function dtheme_actionClickView_ajax_handler() {
       $return = wc_get_template_part( 'content', 'popup-product' );
       wp_reset_query();
   }
-  wp_send_json($return);
-  
+  // wp_send_json($return);
+  // echo $return;
   exit;
   die;
 }
