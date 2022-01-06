@@ -16,7 +16,6 @@ export default class ProductAction {
         for (let i =0; i<this.elements.length; i++){
             this.elements[i].addEventListener("click",function() {
                root.classList.add('ajaxLoading');
-               console.log(this);
                 var formData = new FormData();
                 formData.append( 'action', 'actionClickView' );
                 formData.append( 'data', this.dataset.id );
@@ -28,8 +27,6 @@ export default class ProductAction {
                 } ) // wrapped
                     .then( res => res.text() )
                     .then( data =>  {
-                        console.log(data);
-                        console.log(formView);
                         data = data.replace('type="text" class="datepicker"', 'type="date" class="datepicker"');
                         contentView.innerHTML = data; 
                         formView.classList.add('show');
