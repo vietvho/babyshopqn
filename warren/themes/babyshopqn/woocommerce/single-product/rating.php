@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
+if (!$product) return;
 
 if ( ! wc_review_ratings_enabled() ) {
 	return;

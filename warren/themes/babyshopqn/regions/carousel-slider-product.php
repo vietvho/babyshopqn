@@ -176,7 +176,7 @@ if  ($loop->have_posts() ):
 				$price_str = ob_get_clean();
 				?>
 				   <a href="javascript:void(0)" title="<?php the_title(); ?>" class="c-carousel-product-list__product swiper-slide swiper-lazy product-quickview" data-id="<?= $loop->post->ID ?>">
-					<?php if ( $product->is_on_sale() ) : ?>
+					<?php if ( isset($product) && $product->is_on_sale() ) : ?>
 						<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
 					<?php endif;?>
 
