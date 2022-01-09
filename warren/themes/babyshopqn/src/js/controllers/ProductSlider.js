@@ -33,7 +33,7 @@ export default class ProductSlider{
                 },
                 on: {
                     init: function () {
-                    productZoom.refresh();
+                    // productZoom.refresh();
                     },
                 },
             });
